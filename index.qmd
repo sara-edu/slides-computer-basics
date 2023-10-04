@@ -1,0 +1,103 @@
+---
+pagetitle: "Computer Basics"
+format:
+  revealjs:
+    theme: [default, sara-style.scss]
+    slide-number: true
+    logo: images/logo.png
+    footer: "[TOC](#sec-toc)"
+    incremental: true
+    code-copy: true
+    code-link: true #using downlit pkg
+    code-line-numbers: false
+    menu: false
+    highlight-style: solarized
+    transition: convex
+    background-transition: convex
+knitr:
+  opts_chunk: 
+    echo: true
+    fig.retina: 3 
+---
+
+## {background-image="images/title-front.jpg" background-size="cover"}
+
+[Computer <br>{{< fa computer size=large >}} Basics]{.r-fit-text .right .theme-navy-blue}
+Ajay Koli | Savitribai Ramabai (SaRa) Institute of Data Science | India
+
+[Background image by [Joanna Kosinska](https://unsplash.com/@joannakosinska)]{.small}
+
+```{r}
+#| label: packages-used
+#| echo: false
+#| warning: false
+#| message: false
+
+library(downlit) #to create link of r function
+library(tidyverse)
+library(palmerpenguins)
+```
+
+##
+
+:::: {.columns}
+
+::: {.column width="50%"}
+<br>
+<br>
+![](images/ajay.png)
+:::
+
+::: {.column width="50%"}
+
+<br>
+<br>
+
+[Hello there!!]{.r-fit-text .theme-hello .theme-navy-blue}
+
+{{< fa circle-user >}} [Dr. Ajay Kumar Koli](https://koliajay.netlify.app/) 
+
+{{< fa award >}} Founder & Executive Director
+
+{{< fa play >}} [SaRa Institute of Data Science](https://saraedu.netlify.app/)
+
+{{< fa brands twitter >}} [@sara_institute](https://twitter.com/sara_institute)
+
+{{< fa brands github >}} [Slide source code](https://github.com/sara-edu)
+```{=html}
+<a class="github-button" href="https://github.com/sara-edu/slides-computer-basics" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star this course on Github">Star this course on Github</a><script async defer src="https://buttons.github.io/buttons.js"></script>
+```
+:::
+
+::::
+
+
+## Table of content {#sec-toc}
+
+::: {.nonincremental}
+
+- [Understanding Computers](#sec-understand)
+
+- [Using Windows](#sec-using-windows)
+
+- [Setting Up the Rest of Your System](#sec-system-setup)
+
+- [Using the Internet](#sec-use-internet)
+
+- [Communicating Online](#sec-online-comm)
+:::
+
+##
+
+```{r}
+sessionInfo()
+```
+
+# {background-image="images/thanks.jpg" background-size="cover"}
+
+[thank you]{.r-fit-text .theme-hello .theme-navy-blue}
+
+::: aside
+[Background image by [Anastasiia Kamil](https://unsplash.com/@nastyakamil)]{.small}
+:::
+

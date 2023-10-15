@@ -14,18 +14,32 @@ format:
     highlight-style: solarized
     transition: convex
     background-transition: convex
+    scrollable: true
 knitr:
   opts_chunk: 
     echo: true
     fig.retina: 3 
 ---
 
-## {background-image="images/title-front.jpg" background-size="cover"}
+# {background-image="https://images.unsplash.com/photo-1495465798138-718f86d1a4bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" background-size="cover"}
 
-[Computer <br>{{< fa computer size=large >}} Basics]{.r-fit-text .right .theme-navy-blue}
-Ajay Koli | Savitribai Ramabai (SaRa) Institute of Data Science | India
+[Computer Basics]{.r-fit-text .theme-navy-blue}
 
-[Background image by [Joanna Kosinska](https://unsplash.com/@joannakosinska)]{.small}
+<br>
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+:::
+
+::: {.column width="60%"}
+[Ajay Koli | SaRA Institute of Data Science | India]{.r-fit-text}
+
+[Background image by [Freddie Marriage](https://unsplash.com/@fredmarriage)]{.small}
+:::
+
+::::
 
 ```{r}
 #| label: packages-used
@@ -65,11 +79,17 @@ library(palmerpenguins)
 
 {{< fa brands github >}} [Slide source code](https://github.com/sara-edu)
 ```{=html}
-<a class="github-button" href="https://github.com/sara-edu/slides-computer-basics" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star this course on Github">Star this course on Github</a><script async defer src="https://buttons.github.io/buttons.js"></script>
+<a class="github-button" href="https://github.com/sara-edu/slides-computer-basics/" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star this course on Github">Star this course on Github</a><script async defer src="https://buttons.github.io/buttons.js"></script>
 ```
 :::
 
 ::::
+
+## References
+
+These slides are prepared largely using the information from the book "Computer Basics: Absolute Beginner's Guide" (10th edition, 2023) by Michael Miller. 
+
+![](images/book.png)
 
 
 ## Table of content {#sec-toc}
@@ -86,6 +106,38 @@ library(palmerpenguins)
 
 - [Communicating Online](#sec-online-comm)
 :::
+
+## Computers
+
+- Mid 1980s.
+
+- First time you sit in front of computer.
+
+- In 21st century computers are extremely important part of our life.
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Ibm_pc_5150.jpg/1920px-Ibm_pc_5150.jpg)
+
+##  🧗🏽‍♀️ Goals
+
+- How to use your computer system.
+
+- How computers work
+
+- How to start using computers
+
+- Learn about computer hardware and software.
+
+- About operating system (OS) and the internet
+
+- Writing letters and editing photos, listening to music and watching movies and TV shows
+
+- Searching information, sending and receiving email, using social media/networking.
+
+# [Understanding <br> Computers]{.r-fit-text .centering}
+
+[1. How personal computers work]{.r-fit-text}
+
+{{< include understand-pc.qmd >}}
 
 ##
 

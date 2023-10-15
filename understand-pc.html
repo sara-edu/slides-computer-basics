@@ -1,0 +1,1965 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="understand-pc_files/libs/clipboard/clipboard.min.js"></script>
+<script src="understand-pc_files/libs/quarto-html/tabby.min.js"></script>
+<script src="understand-pc_files/libs/quarto-html/popper.min.js"></script>
+<script src="understand-pc_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="understand-pc_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="understand-pc_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="understand-pc_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="understand-pc_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="understand-pc_files/libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="understand-pc_files/libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.3.433">
+
+  <title>understand-pc</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="understand-pc_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="understand-pc_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="understand-pc_files/libs/revealjs/dist/theme/quarto.css">
+  <link href="understand-pc_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="understand-pc_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="understand-pc_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="understand-pc_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+
+  .callout {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+    border-radius: .25rem;
+  }
+
+  .callout.callout-style-simple { 
+    padding: 0em 0.5em;
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+    display: flex;
+  }
+
+  .callout.callout-style-default {
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+  }
+
+  .callout .callout-body-container {
+    flex-grow: 1;
+  }
+
+  .callout.callout-style-simple .callout-body {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-style-default .callout-body {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-titled.callout-style-simple .callout-body {
+    margin-top: 0.2em;
+  }
+
+  .callout:not(.callout-titled) .callout-body {
+      display: flex;
+  }
+
+  .callout:not(.no-icon).callout-titled.callout-style-simple .callout-content {
+    padding-left: 1.6em;
+  }
+
+  .callout.callout-titled .callout-header {
+    padding-top: 0.2em;
+    margin-bottom: -0.2em;
+  }
+
+  .callout.callout-titled .callout-title  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+    
+  .callout.callout-titled.callout-style-simple .callout-content  p {
+    margin-top: 0;
+  }
+
+  .callout.callout-titled.callout-style-default .callout-content  p {
+    margin-top: 0.7em;
+  }
+
+  .callout.callout-style-simple div.callout-title {
+    border-bottom: none;
+    font-size: .9rem;
+    font-weight: 600;
+    opacity: 75%;
+  }
+
+  .callout.callout-style-default  div.callout-title {
+    border-bottom: none;
+    font-weight: 600;
+    opacity: 85%;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-default div.callout-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-simple .callout-icon::before {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+  }
+
+  .callout.callout-style-default .callout-icon::before {
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 0.9rem 0.9rem;
+  }
+
+  .callout-title {
+    display: flex
+  }
+    
+  .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  .callout.no-icon::before {
+    display: none !important;
+  }
+
+  .callout.callout-titled .callout-body > .callout-content > :last-child {
+    margin-bottom: 0.5rem;
+  }
+
+  .callout.callout-titled .callout-icon::before {
+    margin-top: .5rem;
+    padding-right: .5rem;
+  }
+
+  .callout:not(.callout-titled) .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  /* Callout Types */
+
+  div.callout-note {
+    border-left-color: #4582ec !important;
+  }
+
+  div.callout-note .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
+  }
+
+  div.callout-note.callout-style-default .callout-title {
+    background-color: #dae6fb
+  }
+
+  div.callout-important {
+    border-left-color: #d9534f !important;
+  }
+
+  div.callout-important .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-important.callout-style-default .callout-title {
+    background-color: #f7dddc
+  }
+
+  div.callout-warning {
+    border-left-color: #f0ad4e !important;
+  }
+
+  div.callout-warning .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-warning.callout-style-default .callout-title {
+    background-color: #fcefdc
+  }
+
+  div.callout-tip {
+    border-left-color: #02b875 !important;
+  }
+
+  div.callout-tip .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-tip.callout-style-default .callout-title {
+    background-color: #ccf1e3
+  }
+
+  div.callout-caution {
+    border-left-color: #fd7e14 !important;
+  }
+
+  div.callout-caution .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
+  }
+
+  div.callout-caution.callout-style-default .callout-title {
+    background-color: #ffe5d0
+  }
+
+  </style>
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="what-your-computer-can-do" class="slide level2">
+<h2>What your computer can do</h2>
+<ul>
+<li><p>Good for getting online</p>
+<ul>
+<li>“Web” or World Wide Web (www)</li>
+<li>web browser</li>
+</ul></li>
+<li><p>Good for social networking</p></li>
+<li><p>Good for communicating</p></li>
+<li><p>Good for sharing photos and home movies</p></li>
+<li><p>Good for entertainment</p></li>
+<li><p>Good for keeping informed</p>
+<ul>
+<li>search engine like Google</li>
+</ul></li>
+<li><p>Good for work</p></li>
+<li><p>Good for play</p></li>
+</ul>
+</section>
+<section id="personal-computer-types" class="slide level2">
+<h2>Personal computer types</h2>
+<p><br></p>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Desktop_computer_clipart_-_Yellow_theme.svg/2560px-Desktop_computer_clipart_-_Yellow_theme.svg.png"></p>
+<figcaption>Desktop</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/4/49/Dell_Inspiron_One_23_Touch_AIO_Desktop_PC.png"></p>
+<figcaption>All-in-one computer</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Laptop_collage.jpg/1920px-Laptop_collage.jpg"></p>
+<figcaption>Laptop</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="inside-a-perosnal-computer" class="slide level2">
+<h2>Inside a perosnal computer</h2>
+<p>All PCs have in common is a core set of components:</p>
+<ul>
+<li><p>the computer <strong><em><code>hardware</code></em></strong>: physical parts of your computer you can see and touch.</p></li>
+<li><p>computer <strong><em><code>software</code></em></strong>: the programs and applications you run on your computer</p></li>
+</ul>
+</section>
+<section id="the-motherboard" class="slide level2">
+<h2>The Motherboard</h2>
+<blockquote>
+<p>Home to Almost Everything</p>
+</blockquote>
+<ul>
+<li>Computer chips and circuit boards are connected to a big circuit called a <strong><em><code>motherboard</code></em></strong></li>
+</ul>
+</section>
+<section id="microprocessor" class="slide level2">
+<h2>Microprocessor</h2>
+<blockquote>
+<p>The main engine</p>
+</blockquote>
+<ul>
+<li><p>The specific chip that controls your entire computer system is buried on the motherboard. This chip is called a <em>microprocessor</em> or a <em>central processing unit (<code>CPU</code>)</em>.</p></li>
+<li><p>The microprocessor is the brain inside your system.</p></li>
+<li><p>It processes all the instructions necessary for your computer to perform its duties.</p></li>
+<li><p>The more powerful the microprocessor chip, the faster and more efficiently your system runs.</p></li>
+<li><p>Software programs and input devices all either give or receive instructions that the microprocessor then processes.</p></li>
+<li><p>Intel or AMD make microprocessor chips</p></li>
+<li><p>CPU or microprocessor speed today is measured in <em><code>gigahertz</code></em> (<em>GhZ</em>).</p>
+<ul>
+<li><p>A CPU with a speed of 1GHz can run at one <em>billion</em> clock ticks per second.</p></li>
+<li><p>The bigger the gigahertz number, the faster the chip runs.</p></li>
+</ul></li>
+<li><p>now a days microprocessor comes with two, four, or six cores (each core is the equivalent of a separate CPU on a single chip) – the equivalent of two, four, or six CPUs working together to increase your processing power.</p></li>
+</ul>
+</section>
+<section id="computer-memory" class="slide level2">
+<h2>Computer memory</h2>
+<blockquote>
+<p>Temporary storage</p>
+</blockquote>
+<ul>
+<li><p>Your instructions to computer are temporarily held in the computer’s <em>random access memory (RAM)</em>.</p></li>
+<li><p>The more memory that’s available in a machine, the more instructions and data that can be stored at one time.</p></li>
+<li><p>Memory is measure in terms of <em>bytes</em>.</p></li>
+</ul>
+<p>one thousand <em>bytes</em> (1,024, to be exact) = a <em>kilobyte (KB)</em></p>
+<p>one thousand kilobytes (1,024, to be exact) = a <em>megabyte (MB)</em></p>
+<p>one thousand megabytes= a <em>gigabyte (GB)</em></p>
+<ul>
+<li><p>most computers come today with 4GB memory.</p></li>
+<li><p>you can add extra memory</p></li>
+</ul>
+</section>
+<section id="hard-disk-drives" class="slide level2">
+<h2>Hard Disk Drives</h2>
+<blockquote>
+<p>Long-term storage</p>
+</blockquote>
+<ul>
+<li><p>it permanently stores all your important data. It can store multiple <em>terabytes</em> (<em>TB</em>) of data.</p></li>
+<li><p>RAM stores very less data in comparison to hard disk</p></li>
+<li><p>The data is stored magnetically like magnetic recording tape.</p></li>
+<li><p>A hard disk must be <em><code>formatted</code></em> before ready to store the data.</p></li>
+</ul>
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Warning</strong></p>
+</div>
+<div class="callout-content">
+<p>If you try to reformat your hard disk, you will erase all the programs and data that have installed on your computer – SO DO NOT DO IT!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="solid-state-drives-ssd" class="slide level2">
+<h2>Solid-State Drives (SSD)</h2>
+<blockquote>
+<p>Faster Long-Term Storage</p>
+</blockquote>
+<ul>
+<li><p>this type of storage is much faster than traditional hard disk storage</p></li>
+<li><p>SSD is little more expensive than hard disk.</p></li>
+</ul>
+</section>
+<section id="keyboards" class="slide level2">
+<h2>Keyboards:</h2>
+<blockquote>
+<p>Fingertip Input</p>
+</blockquote>
+<ul>
+<li><p>Computers receive data by reading it from disk, through modem or receiving input directly from you, the user.</p></li>
+<li><p>An <em>input</em> device; the most common input device you use to talk to your computer is the keyboard.</p></li>
+</ul>
+
+<img data-src="https://upload.wikimedia.org/wikipedia/commons/a/a2/LenovoKeyboard.jpg" class="r-stretch"></section>
+<section id="mice-and-touchpads" class="slide level2">
+<h2>Mice and Touchpads</h2>
+<blockquote>
+<p>Point and click input devices</p>
+</blockquote>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/mouse.png"></p>
+<figcaption>Mouse</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/touchpad.png"></p>
+<figcaption>Touchpad</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="network-connections" class="slide level2">
+<h2>Network Connections</h2>
+<blockquote>
+<p>Getting connected</p>
+</blockquote>
+<ul>
+<li><p>A network enables you to share files between multiple computers, as well as connect multiple PCs to a single printer or scanner.</p></li>
+<li><p>To share broadband internet connection to that all your computers connect to the internet.</p></li>
+<li><p>You can connect computers via either wired or wireless networks. Connecting a wireless network is as easy as buying a wireless router.</p></li>
+</ul>
+</section>
+<section id="sound-cards-and-speakers" class="slide level2">
+<h2>Sound cards and speakers</h2>
+<blockquote>
+<p>Making noise</p>
+</blockquote>
+<ul>
+<li>All speaker systems are driven by a sound card or chip that is installed inside your system unit.</li>
+</ul>
+
+<img data-src="images/speakers.png" class="r-stretch"></section>
+<section id="video-cards-and-monitors" class="slide level2">
+<h2>Video cards and monitors:</h2>
+<blockquote>
+<p>Getting the picture</p>
+</blockquote>
+<ul>
+<li><p>Computer monitors today are built around LCD (Liquid-crystal display) displays, just like you have on your living room TV.</p></li>
+<li><p>Most monitors today come with a widescreen display that has the same 16:9 (or 16:10) aspect ratio used to display widescreen movies.</p></li>
+<li><p><code>Resolution</code> refers to the size of the images that can be displayed onscreen and is measured in pixels. A <code>pixel</code> is a single dot on your screen; a full picture is composed of thousands of pixels.</p>
+<ul>
+<li>Most external monitors today can display 1920-1080 or higher resolution (called full high definition, or FHD).</li>
+</ul></li>
+</ul>
+</section>
+<section id="other-parts-of-your-computer-system" class="slide level2">
+<h2>Other parts of your computer system</h2>
+<ul>
+<li><p>Printers: to make hard copy of documents and pictures, also includes copying, scanning, and even faxing capability.</p></li>
+<li><p>Webcams: Small cameras to send live video</p></li>
+<li><p>Joysticks and gamepads: to play the most challenging computer games.</p></li>
+<li><p>External storage: Just like the hard disk or solid state drives inside your computer, but they connect externally to help you back up your precious data.</p></li>
+</ul>
+<p>Other devices connect using a special type of cable called a <em><code>USB</code></em> (Universal Serial Bus) cable. All computers have multiple USB connections (sometimes called <em><code>ports</code></em>).</p>
+</section>
+<section id="software-and-apps" class="slide level2">
+<h2>Software and Apps</h2>
+<ul>
+<li><p>Computer <code>software</code> is something you cannot touch because it is nothing more than a bunch of electronic bits and bytes.</p></li>
+<li><p>These bits and bytes combine into computer programs also called <code>applications</code> or just <code>apps</code>.</p></li>
+<li><p>You need a separate software for each task you want to do with your computer.</p>
+<ul>
+<li>for calculation = <code>spreadsheet</code> or excel</li>
+<li>for writing a letter = <code>word processing</code> program</li>
+<li>change pics or videos = <code>photo-editing</code> software</li>
+<li>to surf internet = need a <code>web browser</code></li>
+</ul></li>
+</ul>
+</section>
+<section id="making-everything-work-with-windows" class="slide level2">
+<h2>Making everything work – with Windows</h2>
+<ul>
+<li><p>You interface with your computer via a special piece of software called an <code>operating system</code>.</p></li>
+<li><p>This program makes your system operate; it is your gateway to the hardware part of your system.</p></li>
+<li><p>Most computers today come with an OS called <code>Microsoft Windows</code>. It is around 35 years old and is published by Microsoft Corporation.</p></li>
+<li><p>Computers manufactured by Apple Computing use a different operating system, call <code>macOS</code>.</p></li>
+<li><p>Google OS is <code>Chrome</code> and for high-tech people another OS is <code>Linux</code>.</p></li>
+</ul>
+</section>
+<section>
+<section id="setting-up-and-using-different-types-of-computers" class="title-slide slide level1 center">
+<h1>Setting Up and Using Different Types of Computers</h1>
+
+</section>
+<section id="laptop-or-2-in-1-pc" class="slide level2">
+<h2>Laptop or 2-in-1 PC</h2>
+<ul>
+<li><p>Laptop also called notebook today are the most popular PC.</p></li>
+<li><p>Elements of a laptop PC</p></li>
+</ul>
+
+<img data-src="images/laptop.png" class="r-stretch"></section>
+<section id="laptop-or-2-in-1-pc-1" class="slide level2">
+<h2>Laptop or 2-in-1 PC</h2>
+<ul>
+<li><p>Laptop also called notebook today are the most popular PC.</p></li>
+<li><p>Elements of a laptop PC</p></li>
+</ul>
+
+<img data-src="images/laptop-side.png" class="r-stretch"></section>
+<section id="all-in-one-desktop-pc" class="slide level2">
+<h2>All-in-One Desktop PC</h2>
+
+<img data-src="images/all-in-one.png" class="r-stretch"></section>
+<section id="traditional-desktop-pc" class="slide level2">
+<h2>Traditional Desktop PC</h2>
+
+<img data-src="images/desktop.png" class="r-stretch"></section>
+<section id="know-windows-11" class="slide level2">
+<h2>Know Windows 11</h2>
+<blockquote>
+<p>Starting and Logging in to Windows</p>
+</blockquote>
+
+<img data-src="images/lockscreen.png" class="r-stretch"></section>
+<section id="know-windows-11-1" class="slide level2">
+<h2>Know Windows 11</h2>
+<blockquote>
+<p>Starting and Logging in to Windows</p>
+</blockquote>
+
+<img data-src="images/passwordscreen.png" class="r-stretch"></section>
+<section id="exploring-the-windows-desktop" class="slide level2">
+<h2>Exploring the Windows Desktop</h2>
+<ul>
+<li>The desktop is your home base in Windows. It is where all your programs and documents reside.</li>
+</ul>
+
+<img data-src="images/desktopscreen.png" class="r-stretch"></section>
+<section id="taskbar" class="slide level2">
+<h2>Taskbar</h2>
+<ul>
+<li><p>Displays icons for your favorite applications and documents, as well as for any open application.</p></li>
+<li><p>Right-click an icon to see a “jump list” of recent open documents and other operations for that application.</p></li>
+</ul>
+
+<img data-src="images/desktopscreen.png" class="r-stretch"></section>
+<section id="weatherwidgets" class="slide level2">
+<h2>Weather/Widgets</h2>
+<ul>
+<li>Displays current weather conditions and, when clicked or hovered over, displays the Widgets pane.</li>
+</ul>
+
+<img data-src="images/desktopscreen.png" class="r-stretch"></section>
+<section id="start-button" class="slide level2">
+<h2>Start button</h2>
+<ul>
+<li><p>Click or tap the Start button to display the Start menu.</p></li>
+<li><p>Right-click the Start button to display an Options menu with links to other important tools and utilities.</p></li>
+</ul>
+
+<img data-src="images/desktopscreen.png" class="r-stretch"></section>
+<section id="search-button" class="slide level2">
+<h2>Search button</h2>
+<p>Click or tap the Search button to open the Search pane and search for files and documents on your computer, or topics on the Web</p>
+
+<img data-src="images/desktopscreen.png" class="r-stretch"></section>
+<section id="task-view-button" class="slide level2">
+<h2>Task View button</h2>
+<p>Click or tap the Task View button to view all open applications as thumbnail previews.</p>
+
+<img data-src="images/desktopscreen.png" class="r-stretch"></section>
+<section id="chat-button" class="slide level2">
+<h2>Chat button</h2>
+<p>“Click or tap the Chat button to open Microsoft Teams and start or join a text or video chat.”</p>
+
+<img data-src="images/desktopscreen.png" class="r-stretch"></section>
+<section id="file-explorer-button" class="slide level2">
+<h2>File Explorer button</h2>
+<p>“Click or tap this button to open the File Explorer for managing the files on your PC.”</p>
+
+<img data-src="images/desktopscreen.png" class="r-stretch"></section>
+<section id="notification-area" class="slide level2">
+<h2>Notification area</h2>
+<p>“This far-right section of the taskbar displays icons for a handful of key system functions, power (on notebook PCs), networking/Internet, and audio (volume). Click or tap this area to display the Quick Setting panel to make quick system adjustments.”</p>
+
+<img data-src="images/desktopscreen.png" class="r-stretch"></section>
+<section id="date-and-time" class="slide level2">
+<h2>Date and time</h2>
+<p>“This displays—you guessed it—the current date and time. Click or tap to display system notifications and messages—and a handy calendar.”</p>
+
+<img data-src="images/desktopscreen.png" class="r-stretch"></section>
+<section id="peek-button" class="slide level2">
+<h2>Peek button</h2>
+<p>“Hover over this slim little rectangle at the far edge of the taskbar and all open windows go transparent so that you can see what’s on the desktop below. Click or tap the Peek button to immediately minimize all open windows.”</p>
+
+<img data-src="images/desktopscreen.png" class="r-stretch"></section>
+<section id="shortcut-icons" class="slide level2">
+<h2>Shortcut icons</h2>
+<p>“These are links to software programs you can place on your desktop; a”clean” desktop includes just one icon—the one for the Windows Recycle Bin.”</p>
+
+<img data-src="images/desktopscreen.png" class="r-stretch"></section>
+<section id="recycle-bin" class="slide level2">
+<h2>Recycle Bin</h2>
+<p>“This is where you dump any files you want to delete.”</p>
+
+<img data-src="images/desktopscreen.png" class="r-stretch"></section>
+<section id="learning-basic-operations" class="slide level2">
+<h2>Learning Basic Operations</h2>
+<p>You need to master a few simple operations with your mouse or touchpad, such as</p>
+<ul>
+<li><p>pointing and clicking,</p></li>
+<li><p>dragging and dropping, and</p></li>
+<li><p>right-clicking</p></li>
+</ul>
+</section>
+<section id="pointing-and-clicking" class="slide level2">
+<h2>Pointing and Clicking</h2>
+<ul>
+<li><p>Simply move your computer’s mouse or, on a notebook PC, drag your finger across the touchpad so that the cursor points to the object you want to select, and then click the left mouse or touchpad button once.</p></li>
+<li><p>Pointing and clicking is an effective way to select menu and toolbar items, icons, and the like.</p></li>
+</ul>
+</section>
+<section id="double-clicking" class="slide level2">
+<h2>Double-Clicking</h2>
+<ul>
+<li><p>In some instances, single-clicking doesn’t launch or open an item; it merely selects it.</p></li>
+<li><p>In these instances, you need to double-click an item to activate an operation.</p></li>
+<li><p>This involves pointing at something onscreen with the cursor and then clicking the left mouse or touchpad button twice in rapid succession.</p></li>
+</ul>
+</section>
+<section id="right-clicking" class="slide level2">
+<h2>Right-Clicking</h2>
+<ul>
+<li><p>Here’s one of the secret keys to efficient Windows operation. When you select an item and then click the right mouse or touchpad button, you often see a pop-up menu. This menu, when available, contains commands that directly relate to the selected object.</p></li>
+<li><p>So, for example, if you right-click a file icon, you see commands related to that file—copy, move, delete, and so forth</p></li>
+</ul>
+</section>
+<section id="dragging-and-dropping" class="slide level2">
+<h2>Dragging and Dropping</h2>
+<ul>
+<li><p>You can use dragging and dropping to move files from one location to another.</p></li>
+<li><p>Dragging is a variation of clicking. To drag an object, point at it with the cursor and then press and hold down the left mouse or touchpad button. Move the mouse without releasing the mouse or touchpad button and drag the object to a new location. When you finish moving the object, release the mouse or touchpad button to drop it onto the new location.</p></li>
+</ul>
+</section>
+<section id="mouse-over" class="slide level2">
+<h2>Mouse over</h2>
+<ul>
+<li><p>When you position the cursor over an item without clicking your mouse or touchpad, you mouse over that item. (This is sometimes called hovering.)</p></li>
+<li><p>Many operations require you to mouse over an item to display additional options or information.</p></li>
+</ul>
+</section>
+<section id="moving-and-resizing-windows" class="slide level2">
+<h2>Moving and Resizing Windows</h2>
+<ul>
+<li><p>“You do this by positioning your cursor over a blank area at the top of the window frame and then clicking and holding down the left button on your mouse or touchpad. As long as this button is depressed, you can use your mouse or touchpad to drag the window around the screen. When you release the mouse or touchpad button, the window stays where you put it.”</p></li>
+<li><p>“After the cursor is positioned over the window’s edge, press and hold down the left mouse or touchpad button; then drag the window border to its new size. Release the button to lock in the newly sized window.”</p></li>
+</ul>
+</section>
+<section id="minimize-windows" class="slide level2">
+<h2>Minimize Windows</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<ul>
+<li><p>To hide the window so that it doesn’t clutter your desktop, click or tap the Minimize button. This shoves the window off the desktop, onto the taskbar.</p></li>
+<li><p>The program in the window is still running, however—it’s just not on the desktop.</p></li>
+<li><p>To restore a minimized window, all you have to do is click or tap the window’s icon on the Windows taskbar (at the bottom of the screen).</p></li>
+</ul>
+</div><div class="column" style="width:30%;">
+<p><img data-src="images/mmm.png"></p>
+</div>
+</div>
+</section>
+<section id="maximize-windows" class="slide level2">
+<h2>Maximize Windows</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<ul>
+<li><p>To make window display full screen, click on the Maximize button in the upper-right corner of the window.</p></li>
+<li><p>If the window is already maximized, the Maximize button changes to a Restore Down button. When you click or tap the Restore Down button, the window resumes its previous (premaximized) dimensions.</p></li>
+</ul>
+</div><div class="column" style="width:30%;">
+<p><img data-src="images/mmm.png"></p>
+</div>
+</div>
+</section>
+<section id="close-windows" class="slide level2">
+<h2>Close Windows</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<ul>
+<li>If what you really want to do is close the window (and close any program running within the window), just click or tap the window’s Close button.</li>
+</ul>
+</div><div class="column" style="width:30%;">
+<p><img data-src="images/mmm.png"></p>
+</div>
+</div>
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Warning</strong></p>
+</div>
+<div class="callout-content">
+<p>If you try to close a window that contains a document you haven’t saved, you’re prompted to save the changes to the document. Because you probably don’t want to lose any of your work, click Yes to save the document, and then close the program.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="snapping-windows-into-position" class="slide level2">
+<h2>Snapping Windows into Position</h2>
+<ul>
+<li>Start by mousing over the Maximize button for the first window. This displays all available snap layouts, as shown in the Figure below, Click or tap the position you want this window to be within the given layout.</li>
+</ul>
+
+<img data-src="images/position-windows.png" class="r-stretch"></section>
+<section id="scrolling-through-a-window" class="slide level2">
+<h2>Scrolling Through a Window</h2>
+<div class="columns">
+<div class="column" style="width:80%;">
+<ul>
+<li><p>Window contains more information than can be displayed onscreen. To view the rest of the document or page, you have to scroll down through the window using the various parts of the scroll bar.</p></li>
+<li><p>To scroll up or down a line at a time, click or tap the up or down arrow on the window’s scroll bar.</p></li>
+<li><p>To move to a specific place in a long document, use your mouse or touch pad to grab the scroll box (between the up and down arrows) and drag it to a new position.</p></li>
+<li><p>If your mouse has a scroll wheel, you can use it to scroll through a long document. Just roll the wheel backward or forward to scroll down or up through a window.</p></li>
+</ul>
+</div><div class="column" style="width:20%;">
+<p><img data-src="images/scrollbar.png"></p>
+</div>
+</div>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>On touch pad use two fingers to move the page up or down</p>
+</div>
+</div>
+</div>
+</section>
+<section id="peeking-at-the-desktop" class="slide level2">
+<h2>Peeking at the Desktop</h2>
+<p>You activate Peek from the little transparent rectangular button at the far right of the Windows taskbar. Click or tap the Peek button, and all open windows are minimized so you see the open desktop.</p>
+
+<img data-src="https://helpdeskgeek.com/wp-content/pictures/2022/02/01-Show-Desktop-Button.jpg" class="r-stretch"></section>
+<section id="using-the-start-menu" class="slide level2">
+<h2>Using the Start Menu</h2>
+<ul>
+<li><p>All the software programs and utilities on your computer are accessed via the Start menu.</p></li>
+<li><p>Click the <code>Start</code> button, located on the left side of the centered taskbar.</p></li>
+</ul>
+</section>
+<section id="navigating-the-start-menu" class="slide level2">
+<h2>Navigating the Start Menu</h2>
+<p>Access all the programs on your system from the Start menu.</p>
+
+<img data-src="images/start-menu.png" class="r-stretch"></section>
+<section id="navigating-the-start-menu-1" class="slide level2">
+<h2>Navigating the Start Menu</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="top">Top</h3>
+<ul>
+<li><p>Consists of icons for apps that you have “pinned” to the Start menu.</p></li>
+<li><p>To view an alphabetical list of all the apps installed on your computer.</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/start-menu.png"></p>
+</div>
+</div>
+</section>
+<section id="navigating-the-start-menu-2" class="slide level2">
+<h2>Navigating the Start Menu</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>The bottom portion consists of icons for recently used files and (sometimes) recommend apps.</p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/start-menu.png"></p>
+</div>
+</div>
+</section>
+<section id="navigating-the-start-menu-3" class="slide level2">
+<h2>Navigating the Start Menu</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><p>The very bottom slice of the <code>Start</code> menu displays your profile name and picture on the left</p>
+<ul>
+<li>Click or tap your profile name/picture to sign out of your account or change users.</li>
+</ul></li>
+<li><p>a Power button on the right</p>
+<ul>
+<li>Click or tap the Power button to shut down or restart your PC or to put it into sleep mode.</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/start-menu.png"></p>
+</div>
+</div>
+</section>
+<section id="launching-a-program" class="slide level2">
+<h2>Launching a Program</h2>
+<blockquote>
+<p>To start any particular software program.</p>
+</blockquote>
+<ol type="1">
+<li><p>Click or tap the Start button to display the Start menu</p></li>
+<li><p>Click or tap the program’s name or icon.</p></li>
+</ol>
+<ul>
+<li>To find a program to launch is to use the Search field at the top of the Start menu. Just start entering the program’s name into the Search field, and a list of matching programs appears on the Start menu.</li>
+</ul>
+</section>
+<section id="using-the-taskbar" class="slide level2">
+<h2>Using the Taskbar</h2>
+<blockquote>
+<p>The little strip at the bottom of the Windows desktop is called the <code>taskbar</code>.</p>
+</blockquote>
+<ul>
+<li><p>to open our favourte applications and documents</p></li>
+<li><p>to switch between open windows</p></li>
+<li><p>to add icons for your favorite programs to the taskbar.</p></li>
+</ul>
+</section>
+<section id="decipher-taskbar-icons" class="slide level2">
+<h2>Decipher Taskbar Icons</h2>
+<p>It is difficult to look at an icon on the taskbar and determine whether it represents an open or closed application or document.</p>
+
+<img data-src="images/taskbar-icons.png" class="r-stretch"><ul>
+<li><p>An icon for a not-yet-open application or document – essentially a shortcut to that app or doc – appears on the taskbar with no underline.</p></li>
+<li><p>An icon for an open window has a short underline,</p></li>
+<li><p>and the icon for the currently selected open window has a longer underline.</p></li>
+</ul>
+</section>
+<section id="opening-applications-and-switching-between" class="slide level2">
+<h2>Opening Applications and Switching Between</h2>
+<blockquote>
+<p>Windows</p>
+</blockquote>
+<ul>
+<li><p>Click or tap an icon for an app with multiple windows open</p></li>
+<li><p>Windows displays thumbnails for each of that application’s open windows. (The same thing happens if you mouse over the cursor for any open-window icon).</p></li>
+<li><p>Move the cursor over a thumbnail, and that window temporarily displays on top of the stack on your desktop, regardless of its actual position.</p></li>
+</ul>
+</section>
+<section id="using-jump-lists" class="slide level2">
+<h2>Using Jump Lists</h2>
+<p>To display an icon’s Jump List, right-click the icon.</p>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><img data-src="images/taskbar-jumplist.png"></p>
+</div><div class="column" style="width:70%;">
+<p>Most Jump Lists contain the following items:</p>
+<ul>
+<li><p>The most recent documents opened in this application</p></li>
+<li><p>A link to open a new instance of this application</p></li>
+<li><p>An option to unpin this item from the taskbar (for shortcut icons)</p></li>
+<li><p>An option to close all windows (for open-window icons)</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="managing-taskbar-buttons" class="slide level2">
+<h2>Managing Taskbar Buttons</h2>
+<ul>
+<li><p>You have total control over the order of icons on the taskbar. Just drag a taskbar icon from one position to another, and there it stays.</p></li>
+<li><p>To add an application or document shortcut to the taskbar</p>
+<ul>
+<li>search that item using the Start menu or File Explorer, right-click the item’s icon, and select More, Pin to Taskbar.</li>
+<li>You can drag an icon from any folder to the taskbar.</li>
+</ul></li>
+<li><p>To remove an item from the taskbar, right-click it and select Unpin from Taskbar.</p></li>
+</ul>
+</section>
+<section id="switching-between-programs" class="slide level2">
+<h2>Switching Between Programs</h2>
+<ul>
+<li><p>Click or tap any visible part of the application’s window, which brings that window to the front.</p></li>
+<li><p>Click or tp the Task View button on the taskbar. This also displays thumbnails of all open windows. Click a thumbnail to switch to that window.</p></li>
+</ul>
+</section>
+<section id="switching-between-programs-1" class="slide level2">
+<h2>Switching Between Programs</h2>
+<ul>
+<li><p>Hold down the <code>Alt</code> key and then press the <code>Tab</code> key repeatedly until the application window you want is selected.</p></li>
+<li><p>When you are at the window you want, release the <code>Alt</code> key.</p></li>
+</ul>
+
+<img data-src="images/alt-tab.png" class="r-stretch"></section>
+<section id="adjusting-quick-settings" class="slide level2">
+<h2>Adjusting Quick Settings</h2>
+<ul>
+<li>Click or tap one of the icons the middle of the notifications area on the taskbar.</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:55%;">
+<ul>
+<li>To adjust basic settings
+<ul>
+<li>changing volume,</li>
+<li>brightness levels,</li>
+<li>connecting to Wi-Fi networks,</li>
+<li>switching to Airplane mode, and</li>
+<li>adjusting the screen brightness.</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:45%;">
+<p><img data-src="images/quick-settings.png"></p>
+</div>
+</div>
+</section>
+<section id="viewing-notifications" class="slide level2">
+<h2>Viewing Notifications</h2>
+<div class="columns">
+<div class="column" style="width:75%;">
+<ul>
+<li><p>If you have any waiting notifications, you see a number next to the date and time area on the taskbar.</p></li>
+<li><p>Click or tap the date and time to display system notifications and notifications from selected apps.</p></li>
+<li><p>There is also a handy calender if you need it.</p></li>
+</ul>
+</div><div class="column" style="width:25%;">
+<p><img data-src="images/notifications.png"></p>
+</div>
+</div>
+</section>
+<section id="learning-important-windows-shortcuts" class="slide level2">
+<h2>Learning Important Windows Shortcuts</h2>
+<p>Learn some shortcuts you can use to speed up important Windows operations.</p>
+<table>
+<caption>Essential Windows 11 Operations</caption>
+<colgroup>
+<col style="width: 28%">
+<col style="width: 15%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Operation</th>
+<th>Keyboard</th>
+<th>Mouse/Touchpad</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Close currently running app or window</td>
+<td>Alt + F4</td>
+<td>Click the X button in top-right corner of window.</td>
+</tr>
+<tr class="even">
+<td>Display context-sensitive options menu</td>
+<td>Application (menu) key</td>
+<td>Right-click.</td>
+</tr>
+<tr class="odd">
+<td>Display Notifications panel</td>
+<td>Windows + N</td>
+<td>Click date and time on the taskbar.</td>
+</tr>
+<tr class="even">
+<td>Display Quick Settings panel</td>
+<td>Windows + A</td>
+<td>Click the left side of the notifications area on the taskbar.</td>
+</tr>
+<tr class="odd">
+<td>Display Start menu</td>
+<td>Windows key</td>
+<td>Click the Start button</td>
+</tr>
+<tr class="even">
+<td>Lock computer</td>
+<td>Windows + L</td>
+<td>Click the Start button, click you username, and then click Lock.</td>
+</tr>
+<tr class="odd">
+<td>Move an item to a new location</td>
+<td>N/A</td>
+<td>Click and drag, and then release.</td>
+</tr>
+<tr class="even">
+<td>Open a program or document</td>
+<td>Enter</td>
+<td>Click (sometimes double-click)</td>
+</tr>
+<tr class="odd">
+<td>Open Windows Help</td>
+<td>Windows + F1</td>
+<td>N/A</td>
+</tr>
+<tr class="even">
+<td>Scroll down</td>
+<td>Pg Dn or down arrow</td>
+<td>Click and drag the scrollbar or click the scroll arrows; use the mouse scroll wheel.</td>
+</tr>
+<tr class="odd">
+<td>Scroll left</td>
+<td>Pg Up or left arrow</td>
+<td>Click and drag the scrollbar or click the arrows; use the mouse scroll wheel.</td>
+</tr>
+<tr class="even">
+<td>Scroll right</td>
+<td>Pg Dn or right arrow</td>
+<td>Click and drag the scrollbar or click the scroll arrows; use the mouse scroll wheel.</td>
+</tr>
+<tr class="odd">
+<td>Scroll up</td>
+<td>Pg Up or up arrow</td>
+<td>Click and drag the scrollbar or click the scroll arrows; use the mouse scroll wheel.</td>
+</tr>
+<tr class="even">
+<td>Search your computer</td>
+<td>Windows + S</td>
+<td>Click within the Search box on the taskbar.</td>
+</tr>
+<tr class="odd">
+<td>Shut down Windows</td>
+<td>Alt + F4</td>
+<td>Click the Start button, click Power, and then click Shut Down.</td>
+</tr>
+<tr class="even">
+<td>View or switch to Alt+Tab other open apps</td>
+<td>Alt+Tab</td>
+<td>N/A</td>
+</tr>
+<tr class="odd">
+<td>View or switch to other virtual desktops</td>
+<td>Windows + Tab</td>
+<td>Click Task View button on taskbar.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="shutting-down-windows---and-your-computer" class="slide level2">
+<h2>Shutting Down Windows - and your computer</h2>
+<blockquote>
+<p>You <em>always</em> want to turn off things through the official Windows procedure.</p>
+</blockquote>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ol type="1">
+<li><p>Click or tap the Start button to display the Start menu.</p></li>
+<li><p>Click or tap the Power button to display the pop-up menu of options</p></li>
+<li><p>Click or tap Shut Down to shut down your computer.</p></li>
+</ol>
+<ul>
+<li>Sleep mode (pauses all operations but still consumers some power).</li>
+<li>Restarting PC (This option shuts down the PC and then powers it back up)</li>
+</ul>
+</div><div class="column" style="width:40%;">
+<p><img data-src="images/shutdown.png"></p>
+</div>
+</div>
+</section></section>
+<section>
+<section id="ch-4-working-with-files-folders-and-online-storage" class="title-slide slide level1 center">
+<h1>Ch-4 Working with Files, Folders, and Online Storage</h1>
+
+</section>
+<section id="working-with-files-folders-and-online-storage" class="slide level2">
+<h2>Working with Files, Folders, and Online Storage</h2>
+<ul>
+<li><p>Managing the data stored on your computer is vital.</p></li>
+<li><p>After you save a file, you might need to copy it to another computer, move it to a new location on your hard drive, rename it, or even delete it.</p></li>
+<li><p>You have to know how to perform all these operations—which means learning how to work with files, folders, and disks in Windows.</p></li>
+</ul>
+</section>
+<section id="understanding-files-and-folders" class="slide level2">
+<h2>Understanding Files and Folders</h2>
+<ul>
+<li><p>All the information on your computer is stored in <code>files</code>.</p></li>
+<li><p>A file is nothing more than a collection of digital data.</p></li>
+<li><p>The contents of a file can be a document (such as a Word memo or an Excel spreadsheet), a digital photo or music track, or the executable code for a software program.</p></li>
+</ul>
+</section>
+<section id="understanding-files-and-folders-1" class="slide level2">
+<h2>Understanding Files and Folders</h2>
+<ul>
+<li><p>Every file has a name.</p></li>
+<li><p>Each filename must consist of two parts, separated by a period -</p>
+<ul>
+<li>the <code>name</code> (to the left of the period) and</li>
+<li>the <code>extension</code> (to the right of the period)</li>
+</ul></li>
+<li><p>A filename can consist of letters, numbers, spaces, and characters and looks something like this: filename.ext</p></li>
+</ul>
+</section>
+<section id="understanding-files-and-folders-2" class="slide level2">
+<h2>Understanding Files and Folders</h2>
+<ul>
+<li><p>Windows stores files in <code>folders</code>.</p></li>
+<li><p>A folder is like a parent file; each folder can contain both files and additional folders.</p></li>
+<li><p>The exact location of a file is called its <code>path</code> and contains all the folders leading to the file.</p></li>
+</ul>
+</section>
+<section id="understanding-files-and-folders-3" class="slide level2">
+<h2>Understanding Files and Folders</h2>
+<p>For example, a file named filename.doc that exists in the system folder, which is itself contained in the windows folder on your C: drive, has a path that looks like this: <code>C:\users\yourname\documents\filename.doc</code>.</p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>By default, Windows hides the extensions when it displays filenames. To display extensions in Windows 11, select View, Show, File Name Extensions.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="using-file-explorer" class="slide level2">
+<h2>Using File Explorer</h2>
+<ul>
+<li><p>In Windows 11, all the items stored on your computer – including programs, documents, and configuring settings – are accessible from <code>File Explorer</code>.</p></li>
+<li><p>You use File Explorer to find, copy, delete, and launch programs and documents.</p></li>
+</ul>
+</section>
+<section id="launching-file-explorer" class="slide level2">
+<h2>Launching File Explorer</h2>
+<p>You can launch File Explorer in one of four ways:</p>
+<ol type="1">
+<li><p>From the taskbar, click or tap the File Explorer icon.</p></li>
+<li><p>Click or tap the Start button to display the Start menu; then click or tap the File Explorer icon.</p></li>
+<li><p>Right-click the Start menu to display the Options menu; then click or tap File Explorer.</p></li>
+<li><p>Press Windows+E on your computer keyboard.</p></li>
+</ol>
+</section>
+<section id="exploring-the-file-explorer-window" class="slide level2">
+<h2>Exploring the File Explorer Window</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+<ul>
+<li><p>you see a toolbar on the top,</p></li>
+<li><p>a Path bar beneath that,</p></li>
+<li><p>a Navigation pane on the left, and</p></li>
+<li><p>a contents pane on the right.</p></li>
+<li><p>The Navigation pane is divided into several sections.</p></li>
+</ul>
+</div><div class="column" style="width:70%;">
+<p><img data-src="images/file-explore.png"></p>
+</div>
+</div>
+</section>
+<section id="navigation-pane" class="slide level2">
+<h2>Navigation Pane</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<p>The Navigation pane is divided into several sections.</p>
+<ul>
+<li><p>Quick Access: your most recent used folders, as well as several folders that are “pinned” to this section: Desktop, Downloads, Documents, Pictures, and Videos.</p></li>
+<li><p>OneDrive section: it lets your folders stored on Microsoft’s OneDrive Internet-based storage service.</p></li>
+<li><p>Below is This PC section: provides access to all the disk drives and devices connected to your computer.</p></li>
+<li><p>Network section: to access all your networked computers.</p></li>
+</ul>
+</div><div class="column" style="width:30%;">
+<p><img data-src="images/nav-pane.png"></p>
+</div>
+</div>
+</section>
+<section id="displaying-file-contents-and-details" class="slide level2">
+<h2>Displaying File Contents and Details</h2>
+<p>To display the Details or the Preview pane, select View, Show and then select either Details Pane or Preview Pane.</p>
+
+<img data-src="images/detail-pane.png" class="r-stretch"></section>
+<section id="navigating-the-folders-on-your-pc" class="slide level2">
+<h2>Navigating the Folders on Your PC</h2>
+<blockquote>
+<p>A subfolder is a folder that is contained within another folder. Multiple subfolders can be nested in this fashion.</p>
+</blockquote>
+<ul>
+<li><p>To view the contents of a disk or folder, double-click or double-tap the selected item. To move back to the disk or folder previously selected, click the Back button (left arrow) in the Path bar beneath the toolbar.</p></li>
+<li><p>To choose from the history of disks and folders previously viewed, click the down arrow in the Address box in the Path bar and select a disk or folder.</p></li>
+<li><p>If you’ve moved back through multiple disks or folders, you can move forward to the next folder by clicking the Forward button (right arrow) in the Path bar.</p></li>
+<li><p>Go directly to any disk or folder by entering the path in the Address box (in the format c:) and pressing Enter.</p></li>
+<li><p>Move backward through the “bread crumb” path in the Address box. Click any previous folder location (separated by arrows) to display that particular folder.</p></li>
+</ul>
+</section>
+<section id="viewing-files-and-folders" class="slide level2">
+<h2>Viewing Files and Folders</h2>
+<blockquote>
+<p>File Explorer has several options to change the way your files and folder display.</p>
+</blockquote>
+<div class="columns">
+<div class="column" style="width:71%;">
+<h3 id="changing-the-way-files-display">Changing the way files display</h3>
+<p>To change the file view, click or tap View in the toolbar.</p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>The Details view is better if you’re looking for files by date or size.</p>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:29%;">
+<p><img data-src="images/files-display.png"></p>
+</div>
+</div>
+</section>
+<section id="sorting-files-and-folders" class="slide level2">
+<h2>Sorting Files and Folders</h2>
+<ul>
+<li><p>To do this, click or tap <code>Sort</code> in the toolbar and then select <code>Group By</code>.</p></li>
+<li><p>You can then choose to sort by a variety of criteria, including</p>
+<ul>
+<li>Name (if you want your file alphabetical),</li>
+<li>Date Modified,</li>
+<li>Type (to see all similar files together),</li>
+<li>Size,</li>
+<li>Date Created,</li>
+<li>Folder Path,</li>
+<li>Authors,</li>
+<li>Categories,</li>
+<li>Tags, or</li>
+<li>Title.</li>
+</ul></li>
+<li><p>To change the sort order of your files, click or tap View on the toolbar and then select either Ascending or Descending.</p></li>
+</ul>
+</section>
+<section id="grouping-files-and-folders" class="slide level2">
+<h2>Grouping Files and Folders</h2>
+<ul>
+<li><p>You can also configure File Explorer to group the files in your folder, which can make it easier to identify particular files.</p></li>
+<li><p>For example, if you sort your files by time and date modified, they’re grouped by date (Today, Yesterday, Last Week, and so on).</p></li>
+<li><p>If you sort your files by type, they’re grouped by file extension, and so on.</p></li>
+</ul>
+</section>
+<section id="searching-for-files" class="slide level2">
+<h2>Searching for Files</h2>
+<ul>
+<li><p>To use the Instant Search feature, enter one or more keywords into the Search box in the Path bar. Matching files display as you type; you can select one of these or finish entering the keyword(s) and then press Enter.</p></li>
+<li><p>File Explorer displays a list of items that match your search criteria. Double-click or double-tap any icon to open that file.</p></li>
+</ul>
+</section>
+<section id="performing-basic-file-and-folder-operations" class="slide level2">
+<h2>Performing Basic File and Folder Operations</h2>
+<p>Use the functions availabe on the File Explorer toolbar.</p>
+
+<img data-src="images/toolbar.png" class="r-stretch"></section>
+<section id="creating-new-folders" class="slide level2">
+<h2>Creating New Folders</h2>
+<p>The more files you create, the harder it is to organize and find things on your hard disk.</p>
+<p>To create a new folder, follow these steps:</p>
+<ol type="1">
+<li><p>Navigate to the drive or folder where you want to place the new folder.</p></li>
+<li><p>On the toolbar, select New, Folder.</p></li>
+<li><p>A new, empty folder appears within the File Explorer window, with the filename New Folder highlighted.</p></li>
+<li><p>Type a name for your folder (which overwrites the New Folder name), and press Enter.</p></li>
+</ol>
+</section>
+<section id="creating-new-folders-1" class="slide level2">
+<h2>Creating New Folders</h2>
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Warning</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li><p>Folder and filenames can include up to 255 characters—including many special characters. Some special characters, however, are “illegal,” meaning that you can’t use them in folder or filenames. Illegal characters include the following: <code>\ / : * ? “ &lt; &gt; |</code>.</p></li>
+<li><p>The one part of the filename you should never change is the extension—the part that comes after the “dot.” That’s because Windows and other software programs recognize different types of program files and documents by their extension. This is why, by default, Windows hides these file extensions—so you can’t change them by mistake.</p></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="renaming-files-and-folders" class="slide level2">
+<h2>Renaming Files and Folders</h2>
+<p>When you create a new file or folder, it helps to give it a name that somehow describes its contents.</p>
+<p>To rename a file (or folder), follow these steps:</p>
+<ol type="1">
+<li><p>Click or tap the file or folder you want to rename.</p></li>
+<li><p>Click or tap the Rename button on the toolbar.</p></li>
+<li><p>Type a new name for your file or folder (which overwrites the current name), and press Enter.</p></li>
+</ol>
+</section>
+<section id="copying-files" class="slide level2">
+<h2>Copying Files</h2>
+<p>Copying a file lets you re-create that file in a different location, either on your computer’s hard drive or on some sort of external media. Here’s how to do it:</p>
+<ol type="1">
+<li><p>Select the item you want to copy.</p></li>
+<li><p>Click or tap the Copy button on the toolbar.</p></li>
+<li><p>Navigate to the folder where you want to copy the item.</p></li>
+<li><p>Click or tap the Paste button on the toolbar.</p></li>
+</ol>
+</section>
+<section id="moving-cutting-and-pasting-files" class="slide level2">
+<h2>Moving (Cutting and Pasting) Files</h2>
+<ul>
+<li><p>Moving a file (or folder) is different from copying it. Moving cuts the item from one location and pastes it into a new location. Copying leaves the item in its original location and creates a copy of the item elsewhere.</p></li>
+<li><p>In other words, when you copy something, you end up with two of it. When you move something, you have only the one instance.</p></li>
+</ul>
+<p>To move a file, follow these steps:</p>
+<ol type="1">
+<li><p>Select the item you want to move.</p></li>
+<li><p>Click or tap the Cut button on the toolbar.</p></li>
+<li><p>Navigate to the new location where you want to move the item.</p></li>
+<li><p>Click or tap the Paste button.</p></li>
+</ol>
+</section>
+<section id="deleting-files" class="slide level2">
+<h2>Deleting Files</h2>
+<ul>
+<li>Too many files eat up too much hard disk space—which is a bad thing because you have only so much disk space. Deleting a file is as easy as following these simple steps:</li>
+</ul>
+<ol type="1">
+<li><p>Select the file or files you want to delete. (To select multiple files, hold down the Ctrl key while clicking or tapping.)</p></li>
+<li><p>Click or tap the Delete button on the toolbar.</p></li>
+</ol>
+<p>This simple operation sends the file to the Windows Recycle Bin</p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>You can also delete a file by selecting it and then pressing the Delete key on your computer keyboard.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="working-with-the-recycle-bin" class="slide level2">
+<h2>Working with the Recycle Bin</h2>
+<p>Recycle Bin is a special folder on your hard disk that temporarily stores all deleted items.</p>
+<h4 id="restoring-deleted-files">Restoring Deleted Files</h4>
+<p>If you’ve recently deleted a file, it should still be in the Recycle Bin folder.</p>
+<p>To “undelete” a file from the Recycle Bin, follow these steps:</p>
+<ol type="1">
+<li><p>Double-click or double-tap the Recycle Bin icon on the desktop (shown in Figure 4.5) to open the Recycle Bin folder.</p></li>
+<li><p>Click or tap the file(s) you want to restore.</p></li>
+<li><p>From the toolbar, select More, Restore the Selected Items.</p></li>
+</ol>
+
+<img data-src="images/bin.png" class="r-stretch"></section>
+<section id="emptying-the-recycle-bin" class="slide level2">
+<h2>Emptying the Recycle Bin</h2>
+<ol type="1">
+<li><p>Double-click or double-tap the Recycle Bin icon on your desktop to open the Recycle Bin folder.</p></li>
+<li><p>Click or tap the Empty the Recycle Bin button on the toolbar.</p></li>
+<li><p>When the confirmation dialog box appears, click or tap Yes to completely erase the files; click or tap No to continue storing the files in the Recycle Bin.</p></li>
+</ol>
+
+<img data-src="images/bin.png" class="r-stretch"></section>
+<section id="working-with-compressed-folders" class="slide level2">
+<h2>Working with Compressed Folders</h2>
+<blockquote>
+<p><code>Compressed folders</code> (sometimes called zip files) take big files and compress their size, which makes them easier to copy or move</p>
+</blockquote>
+</section>
+<section id="compressing-a-file" class="slide level2">
+<h2>Compressing a File</h2>
+<ol type="1">
+<li><p>Select the file(s) you want to compress. (Hold down the Ctrl button as you select multiple files.)</p></li>
+<li><p>On the toolbar, select More (three dots), Compress to ZIP file.</p></li>
+</ol>
+<p>Compressed folder is distinguished by a little zipper on the folder icon.</p>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>The compressed folder is actually a file with a <code>.ZIP</code> extension, so you can use it with other compression/decompression programs, such as WinZip.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="extracting-files-from-a-compressed-folder" class="slide level2">
+<h2>Extracting Files from a Compressed Folder</h2>
+<p>The process of decompressing a file is actually an extraction process. That’s because you extract the original file(s) from the compressed folder. Follow these steps:</p>
+<ol type="1">
+<li><p>Select the compressed folder.</p></li>
+<li><p>From the toolbar, select Extract All. This displays the Select a Destination and Extract Files dialog box.</p></li>
+<li><p>Accept the current location or click the Browse button and choose a different location.</p></li>
+<li><p>Click or tap the Extract button.</p></li>
+</ol>
+</section>
+<section id="copying-files-to-another-computer" class="slide level2">
+<h2>Copying Files to Another Computer</h2>
+<p>Of course, you’re not limited to copying and moving files from one location to another on a single PC. You can also copy files to other PCs via either a network connection or some sort of portable disk drive.</p>
+<ul>
+<li>The most popular type of portable drive today is the USB drive (sometimes called a flash drive or thumb drive).</li>
+</ul>
+
+<img data-src="images/usb.png" class="r-stretch"></section>
+<section id="how-to-use-usb" class="slide level2">
+<h2>How to use USB</h2>
+<ol type="1">
+<li><p>To use a USB drive, simply insert the device into an open USB port on your computer.</p></li>
+<li><p>After you insert it, the drive appears as a new drive in the This PC section of the File Explorer navigation pane.</p></li>
+<li><p>Double-click or double-tap the USB drive icon to view the contents of the drive;</p></li>
+<li><p>you can then copy and paste files from your hard drive to the USB drive and vice versa.</p></li>
+<li><p>When you finish copying files, just remove the USB device. It’s that simple.</p></li>
+</ol>
+</section>
+<section id="copying-files-via-email-fa-envelope" class="slide level2">
+<h2>Copying Files via Email <i class="fa-solid fa-envelope" aria-label="envelope"></i></h2>
+<ul>
+<li><p>You can send any file as an email attachment; a file is literally attached to an email message.</p></li>
+<li><p>When the message is sent, the recipient can open or save the attached file when reading the message.</p></li>
+</ul>
+</section>
+<section id="working-with-cloud-based-storage" class="slide level2">
+<h2>Working with Cloud-Based Storage</h2>
+<p>Microsoft offers online storage for all your documents and data, via its <code>OneDrive</code> service. When you store your files on OneDrive, you can access them via any computer or mobile device connected to the Internet.</p>
+<p>This type of online file storage is called <code>cloud storage</code> because the files are stored on the “cloud” of computers on the internet.</p>
+<p>It’s all up to you, and all available to any person with a web browser and an Internet connection.</p>
+</section>
+<section id="accessing-onedrive-from-file-explorer" class="slide level2">
+<h2>Accessing OneDrive from File Explorer</h2>
+<p>From within File Explorer, click or tap OneDrive in the navigation pane. This displays all your OneDrive files and folders.</p>
+
+<img data-src="images/onedrive.png" class="r-stretch"></section>
+<section id="using-microsoft-onedrive" class="slide level2">
+<h2>Using Microsoft OneDrive</h2>
+<ol type="1">
+<li><p>From within any web browser, go to onedrive.live.com and either sign into an existing account or sign up for a new one.</p></li>
+<li><p>As you can see in below Figure, the OneDrive website displays the files you uploaded. If you organized your files into folders, you see those folders on the main page. Click a folder to view its contents.</p></li>
+</ol>
+
+<img data-src="images/onedrive.png" class="r-stretch"><div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>Microsoft gives you 5GB of storage in your free OneDrive account</p>
+</div>
+</div>
+</div>
+</section>
+<section id="syncing-files-on-your-pc-to-onedrive" class="slide level2">
+<h2>Syncing Files on Your PC to OneDrive</h2>
+<p>To synchronize a file in this fashion, it must be stored in a special OneDrive folder. Then, whenever you connect to the Internet, any changes you make to that file are automatically made to the version of that file stored on OneDrive.</p>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p><code>Microsoft OneDrive</code> is just one of many cloud storage services you can use to store and share your files online. Other popular services include <code>Apple iCloud</code> (www.icloud.com), <code>Box</code> (www.box.com), <code>Dropbox</code> (www.dropbox.com), and <code>Google Drive</code> (www.google.com/drive/). All these services work in a similar fashion. Check out the various services before you commit—especially for a paid plan.</p>
+</div>
+</div>
+</div>
+<div class="footer footer-default">
+
+</div>
+</section></section>
+    </div>
+  </div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="understand-pc_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="understand-pc_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="understand-pc_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="understand-pc_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="understand-pc_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="understand-pc_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="understand-pc_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="understand-pc_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="understand-pc_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="understand-pc_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'smaller': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        text: function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+      });
+      clipboard.on('success', function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      });
+      function tippyHover(el, contentFn) {
+        const config = {
+          allowHTML: true,
+          content: contentFn,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start'
+        };
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          return note.innerHTML;
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    
+
+</body></html>

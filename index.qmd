@@ -1,7 +1,9 @@
 ---
 pagetitle: "Computer Basics"
+menu: true
 format:
   revealjs:
+    controls: true
     theme: [default, sara-style.scss]
     slide-number: true
     logo: images/logo.png

@@ -1,8 +1,9 @@
 ---
 pagetitle: "Computer Basics"
-menu: true
+
 format:
   revealjs:
+    menu: true
     controls: true
     theme: [default, sara-style.scss]
     slide-number: true
@@ -12,7 +13,6 @@ format:
     code-copy: true
     code-link: true #using downlit pkg
     code-line-numbers: false
-    menu: false
     highlight-style: solarized
     transition: convex
     background-transition: convex

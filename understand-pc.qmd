@@ -266,197 +266,41 @@ Other devices connect using a special type of cable called a *`USB`* (Universal 
 
 ## Exploring the Windows Desktop
 
--   The desktop is your home base in Windows. It is where all your programs and documents reside.
+The desktop is your home base in Windows. It is where all your programs and documents reside.
 
 ![](images/desktopscreen.png)
 
-## Taskbar
-
--   Displays icons for your favorite applications and documents, as well as for any open application.
-
--   Right-click an icon to see a "jump list" of recent open documents and other operations for that application.
-
-![](images/desktopscreen.png)
-
-## Weather/Widgets
-
--   Displays current weather conditions and, when clicked or hovered over, displays the Widgets pane.
-
-![](images/desktopscreen.png)
-
-## Start button
-
--   Click or tap the Start button to display the Start menu.
-
--   Right-click the Start button to display an Options menu with links to other important tools and utilities.
-
-![](images/desktopscreen.png)
-
-## Search button
-
-Click or tap the Search button to open the Search pane and search for files and documents on your computer, or topics on the Web
-
-![](images/desktopscreen.png)
-
-## Task View button
-
-Click or tap the Task View button to view all open applications as thumbnail previews.
-
-![](images/desktopscreen.png)
-
-## Chat button
-
-"Click or tap the Chat button to open Microsoft Teams and start or join a text or video chat."
-
-![](images/desktopscreen.png)
-
-## File Explorer button
-
-"Click or tap this button to open the File Explorer for managing the files on your PC."
-
-![](images/desktopscreen.png)
-
-## Notification area
-
-"This far-right section of the taskbar displays icons for a handful of key system functions, power (on notebook PCs), networking/Internet, and audio (volume). Click or tap this area to display the Quick Setting panel to make quick system adjustments."
-
-![](images/desktopscreen.png)
-
-## Date and time
-
-"This displays---you guessed it---the current date and time. Click or tap to display system notifications and messages---and a handy calendar."
-
-![](images/desktopscreen.png)
-
-## Peek button
-
-"Hover over this slim little rectangle at the far edge of the taskbar and all open windows go transparent so that you can see what's on the desktop below. Click or tap the Peek button to immediately minimize all open windows."
-
-![](images/desktopscreen.png)
-
-## Shortcut icons
-
-"These are links to software programs you can place on your desktop; a "clean" desktop includes just one icon---the one for the Windows Recycle Bin."
-
-![](images/desktopscreen.png)
-
-## Recycle Bin
-
-"This is where you dump any files you want to delete."
-
-![](images/desktopscreen.png)
+## {background-image="images/desktopscreen.png" background-size="100%"}
 
 ## Learning Basic Operations
 
 You need to master a few simple operations with your mouse or touchpad, such as
 
--   pointing and clicking,
+- Pointing and clicking,
 
--   dragging and dropping, and
+- Dragging and dropping, and
 
--   right-clicking
+- Right-clicking
 
-## Pointing and Clicking
-
--   Simply move your computer's mouse or, on a notebook PC, drag your finger across the touchpad so that the cursor points to the object you want to select, and then click the left mouse or touchpad button once.
-
--   Pointing and clicking is an effective way to select menu and toolbar items, icons, and the like.
-
-## Double-Clicking
-
--   In some instances, single-clicking doesn't launch or open an item; it merely selects it.
-
--   In these instances, you need to double-click an item to activate an operation.
-
--   This involves pointing at something onscreen with the cursor and then clicking the left mouse or touchpad button twice in rapid succession.
-
-## Right-Clicking
-
--   Here's one of the secret keys to efficient Windows operation. When you select an item and then click the right mouse or touchpad button, you often see a pop-up menu. This menu, when available, contains commands that directly relate to the selected object.
-
--   So, for example, if you right-click a file icon, you see commands related to that file---copy, move, delete, and so forth
-
-## Dragging and Dropping
-
--   You can use dragging and dropping to move files from one location to another.
-
--   Dragging is a variation of clicking. To drag an object, point at it with the cursor and then press and hold down the left mouse or touchpad button. Move the mouse without releasing the mouse or touchpad button and drag the object to a new location. When you finish moving the object, release the mouse or touchpad button to drop it onto the new location.
-
-## Mouse over
-
--   When you position the cursor over an item without clicking your mouse or touchpad, you mouse over that item. (This is sometimes called hovering.)
-
--   Many operations require you to mouse over an item to display additional options or information.
+- Mouse over/hovering
 
 ## Moving and Resizing Windows
 
--   "You do this by positioning your cursor over a blank area at the top of the window frame and then clicking and holding down the left button on your mouse or touchpad. As long as this button is depressed, you can use your mouse or touchpad to drag the window around the screen. When you release the mouse or touchpad button, the window stays where you put it."
-
--   "After the cursor is positioned over the window's edge, press and hold down the left mouse or touchpad button; then drag the window border to its new size. Release the button to lock in the newly sized window."
-
-## Minimize Windows
-
-::: columns
-::: {.column width="70%"}
--   To hide the window so that it doesn't clutter your desktop, click or tap the Minimize button. This shoves the window off the desktop, onto the taskbar.
-
--   The program in the window is still running, however---it's just not on the desktop.
-
--   To restore a minimized window, all you have to do is click or tap the window's icon on the Windows taskbar (at the bottom of the screen).
-:::
-
-::: {.column width="30%"}
 ![](images/mmm.png)
-:::
-:::
-
-## Maximize Windows
-
-::: columns
-::: {.column width="70%"}
--   To make window display full screen, click on the Maximize button in the upper-right corner of the window.
-
--   If the window is already maximized, the Maximize button changes to a Restore Down button. When you click or tap the Restore Down button, the window resumes its previous (premaximized) dimensions.
-:::
-
-::: {.column width="30%"}
-![](images/mmm.png)
-:::
-:::
-
-## Close Windows
-
-::: columns
-::: {.column width="70%"}
--   If what you really want to do is close the window (and close any program running within the window), just click or tap the window's Close button.
-:::
-
-::: {.column width="30%"}
-![](images/mmm.png)
-:::
-:::
 
 ::: callout-warning
 If you try to close a window that contains a document you haven't saved, you're prompted to save the changes to the document. Because you probably don't want to lose any of your work, click Yes to save the document, and then close the program.
 :::
 
-## Snapping Windows into Position
-
--   Start by mousing over the Maximize button for the first window. This displays all available snap layouts, as shown in the Figure below, Click or tap the position you want this window to be within the given layout.
-
-![](images/position-windows.png)
-
 ## Scrolling Through a Window
 
 ::: columns
 ::: {.column width="80%"}
--   Window contains more information than can be displayed onscreen. To view the rest of the document or page, you have to scroll down through the window using the various parts of the scroll bar.
 
--   To scroll up or down a line at a time, click or tap the up or down arrow on the window's scroll bar.
+::: callout-tip
+On touch pad use two fingers to move the page up or down
+:::
 
--   To move to a specific place in a long document, use your mouse or touch pad to grab the scroll box (between the up and down arrows) and drag it to a new position.
-
--   If your mouse has a scroll wheel, you can use it to scroll through a long document. Just roll the wheel backward or forward to scroll down or up through a window.
 :::
 
 ::: {.column width="20%"}
@@ -464,13 +308,9 @@ If you try to close a window that contains a document you haven't saved, you're 
 :::
 :::
 
-::: callout-tip
-On touch pad use two fingers to move the page up or down
-:::
-
 ## Peeking at the Desktop
 
-You activate Peek from the little transparent rectangular button at the far right of the Windows taskbar. Click or tap the Peek button, and all open windows are minimized so you see the open desktop.
+To minimize all open windows so that you can see the open desktop.
 
 ![](https://helpdeskgeek.com/wp-content/pictures/2022/02/01-Show-Desktop-Button.jpg)
 
@@ -486,51 +326,6 @@ Access all the programs on your system from the Start menu.
 
 ![](images/start-menu.png)
 
-## Navigating the Start Menu
-
-::: columns
-::: {.column width="50%"}
-### Top
-
--   Consists of icons for apps that you have "pinned" to the Start menu.
-
--   To view an alphabetical list of all the apps installed on your computer.
-:::
-
-::: {.column width="50%"}
-![](images/start-menu.png)
-:::
-:::
-
-## Navigating the Start Menu
-
-::: columns
-::: {.column width="50%"}
-The bottom portion consists of icons for recently used files and (sometimes) recommend apps.
-:::
-
-::: {.column width="50%"}
-![](images/start-menu.png)
-:::
-:::
-
-## Navigating the Start Menu
-
-::: columns
-::: {.column width="50%"}
--   The very bottom slice of the `Start` menu displays your profile name and picture on the left
-
-    -   Click or tap your profile name/picture to sign out of your account or change users.
-
--   a Power button on the right
-
-    -   Click or tap the Power button to shut down or restart your PC or to put it into sleep mode.
-:::
-
-::: {.column width="50%"}
-![](images/start-menu.png)
-:::
-:::
 
 ## Launching a Program
 
@@ -540,39 +335,17 @@ The bottom portion consists of icons for recently used files and (sometimes) rec
 
 2.  Click or tap the program's name or icon.
 
--   To find a program to launch is to use the Search field at the top of the Start menu. Just start entering the program's name into the Search field, and a list of matching programs appears on the Start menu.
-
 ## Using the Taskbar
 
 > The little strip at the bottom of the Windows desktop is called the `taskbar`.
 
--   to open our favourte applications and documents
-
--   to switch between open windows
-
--   to add icons for your favorite programs to the taskbar.
-
-## Decipher Taskbar Icons
-
-It is difficult to look at an icon on the taskbar and determine whether it represents an open or closed application or document.
-
 ![](images/taskbar-icons.png)
 
--   An icon for a not-yet-open application or document -- essentially a shortcut to that app or doc -- appears on the taskbar with no underline.
+-   To open our favorite applications and documents
 
--   An icon for an open window has a short underline,
+-   To switch between open windows
 
--   and the icon for the currently selected open window has a longer underline.
-
-## Opening Applications and Switching Between
-
-> Windows
-
--   Click or tap an icon for an app with multiple windows open
-
--   Windows displays thumbnails for each of that application's open windows. (The same thing happens if you mouse over the cursor for any open-window icon).
-
--   Move the cursor over a thumbnail, and that window temporarily displays on top of the stack on your desktop, regardless of its actual position.
+-   To add icons for your favorite programs to the taskbar.
 
 ## Using Jump Lists
 
@@ -596,23 +369,6 @@ Most Jump Lists contain the following items:
 :::
 :::
 
-## Managing Taskbar Buttons
-
--   You have total control over the order of icons on the taskbar. Just drag a taskbar icon from one position to another, and there it stays.
-
--   To add an application or document shortcut to the taskbar
-
-    -   search that item using the Start menu or File Explorer, right-click the item's icon, and select More, Pin to Taskbar.
-    -   You can drag an icon from any folder to the taskbar.
-
--   To remove an item from the taskbar, right-click it and select Unpin from Taskbar.
-
-## Switching Between Programs
-
--   Click or tap any visible part of the application's window, which brings that window to the front.
-
--   Click or tp the Task View button on the taskbar. This also displays thumbnails of all open windows. Click a thumbnail to switch to that window.
-
 ## Switching Between Programs
 
 -   Hold down the `Alt` key and then press the `Tab` key repeatedly until the application window you want is selected.
@@ -623,42 +379,17 @@ Most Jump Lists contain the following items:
 
 ## Adjusting Quick Settings
 
--   Click or tap one of the icons the middle of the notifications area on the taskbar.
+Click or tap one of the icons the middle of the notifications area on the taskbar.
 
-::: columns
-::: {.column width="55%"}
--   To adjust basic settings
-    -   changing volume,
-    -   brightness levels,
-    -   connecting to Wi-Fi networks,
-    -   switching to Airplane mode, and
-    -   adjusting the screen brightness.
-:::
-
-::: {.column width="45%"}
 ![](images/quick-settings.png)
-:::
-:::
 
 ## Viewing Notifications
 
-::: columns
-::: {.column width="75%"}
--   If you have any waiting notifications, you see a number next to the date and time area on the taskbar.
-
--   Click or tap the date and time to display system notifications and notifications from selected apps.
-
--   There is also a handy calender if you need it.
-:::
-
-::: {.column width="25%"}
 ![](images/notifications.png)
-:::
-:::
 
-## Learning Important Windows Shortcuts
+## Important Windows Shortcuts
 
-Learn some shortcuts you can use to speed up important Windows operations.
+Some shortcuts you can use to speed up important Windows operations.
 
 | Operation                                 | Keyboard               | Mouse/Touchpad                                                                       |
 |-------------------------------------------|------------------------|--------------------------------------------------------------------------------------|
@@ -683,27 +414,12 @@ Learn some shortcuts you can use to speed up important Windows operations.
 
 : Essential Windows 11 Operations
 
-## Shutting Down Windows - and your computer
+## Shutting Down Windows & PC
+
 > You *always* want to turn off things through the official Windows procedure.
 
-:::: {.columns}
-
-::: {.column width="60%"}
-1. Click or tap the Start button to display the Start menu.
-
-1. Click or tap the Power button to display the pop-up menu of options
-
-1. Click or tap Shut Down to shut down your computer.
-  - Sleep mode (pauses all operations but still consumers some power).
-  - Restarting PC (This option shuts down the PC and then powers it back up)
-:::
-
-::: {.column width="40%"}
 ![](images/shutdown.png)
-:::
 
-::::
-  
 # Ch-4 Working with Files, Folders, and Online Storage
 
 ## Working with Files, Folders, and Online Storage
@@ -726,7 +442,7 @@ Learn some shortcuts you can use to speed up important Windows operations.
 
 - Every file has a name.
 
-- Each filename must consist of two parts, separated by a period - 
+- Each filename must consist of two parts, separated by a period (`.`) 
   - the `name` (to the left of the period) and
   - the `extension` (to the right of the period)
   

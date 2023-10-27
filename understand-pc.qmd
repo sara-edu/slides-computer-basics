@@ -56,49 +56,46 @@ All PCs have in common is a core set of components:
 
 > Home to Almost Everything
 
--   Computer chips and circuit boards are connected to a big circuit called a ***`motherboard`***
+Computer chips and circuit boards are connected to a big circuit called a ***`motherboard`***
 
 ![](https://upload.wikimedia.org/wikipedia/commons/b/b7/Computer-motherboard.jpg)
 
-## Microprocessor
-
+## Microprocessor:
 > The main engine
 
--   The specific chip that controls your entire computer system is buried on the motherboard. This chip is called a *microprocessor* or a *central processing unit (`CPU`)*.
+:::: {.columns}
 
--   The microprocessor is the brain inside your system.
+::: {.column width="50%"}
 
--   It processes all the instructions necessary for your computer to perform its duties.
+![as seen from above](https://upload.wikimedia.org/wikipedia/commons/d/dc/Intel_80486DX2_top.jpg){width=250}
+:::
 
--   The more powerful the microprocessor chip, the faster and more efficiently your system runs.
+::: {.column width="50%"}
 
--   Software programs and input devices all either give or receive instructions that the microprocessor then processes.
+![showing its pins](https://upload.wikimedia.org/wikipedia/commons/e/e7/Intel_80486DX2_bottom.jpg){width=250}
+:::
 
--   Intel or AMD make microprocessor chips
+::::
 
--   CPU or microprocessor speed today is measured in *`gigahertz`* (*GhZ*).
+- The specific chip that controls your entire computer system is buried on the motherboard. This chip is called a *microprocessor* or a *central processing unit (`CPU`)*. 
 
-    -   A CPU with a speed of 1GHz can run at one *billion* clock ticks per second.
-
-    -   The bigger the gigahertz number, the faster the chip runs.
-
--   Now a days microprocessor comes with two, four, or six cores (each core is the equivalent of a separate CPU on a single chip) -- the equivalent of two, four, or six CPUs working together to increase your processing power.
+- Its speed today is measured in *`gigahertz`* (*GHz*)
 
 ## Computer memory
 
 > Temporary storage
 
--   Your instructions to computer are temporarily held in the computer's *random access memory (RAM)*.
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Swissbit_2GB_PC2-5300U-555.jpg/2880px-Swissbit_2GB_PC2-5300U-555.jpg)
+
+-   Your instructions to computer are temporarily held in the computer's random access memory (`RAM`).
 
 -   The more memory that's available in a machine, the more instructions and data that can be stored at one time.
 
 -   You can add extra memory
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Swissbit_2GB_PC2-5300U-555.jpg/2880px-Swissbit_2GB_PC2-5300U-555.jpg)
-
 ## Computer memory
 
-Memory is measure in terms of *bytes*.
+Memory is measure in terms of `bytes`.
 
 - one thousand *bytes* (1,024, to be exact) = a *kilobyte (KB)*
 
@@ -113,20 +110,12 @@ Memory is measure in terms of *bytes*.
 
 > Long-term storage
 
--   It permanently stores all your important data. It can store multiple *terabytes* (*TB*) of data.
+It permanently stores all your important data. It can store multiple *terabytes* (*TB*) of data.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Laptop-hard-drive-exposed.jpg/1920px-Laptop-hard-drive-exposed.jpg)
 
-## Hard Disk Drives
-
--   RAM stores very less data in comparison to hard disk
-
--   The data is stored magnetically like magnetic recording tape.
-
--   A hard disk must be *`formatted`* before ready to store the data.
-
 ::: callout-warning
-If you try to reformat your hard disk, you will erase all the programs and data that have installed on your computer -- SO DO NOT DO IT!
+- If you try to reformat your hard disk, you will erase all the programs and data that have installed on your computer -- SO DO NOT DO IT!
 :::
 
 ## Solid-State Drives (SSD)
@@ -137,17 +126,15 @@ If you try to reformat your hard disk, you will erase all the programs and data 
 
 -   This type of storage is much faster than traditional hard disk storage
 
--   SSD is little more expensive than hard disk.
+-   `SSD` is little more expensive than hard disk.
 
 ## Keyboards:
 
-> Fingertip Input
+Computers receive data by reading it from disk, through modem or receiving input directly from you, the user.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/a/a2/LenovoKeyboard.jpg)
 
--   Computers receive data by reading it from disk, through modem or receiving input directly from you, the user.
-
--   An *input* device; the most common input device you use to talk to your computer is the keyboard.
+-   An `input device`, the most common input device you use to talk to your computer is the keyboard.
 
 ## Mice and Touchpads
 
@@ -173,7 +160,7 @@ If you try to reformat your hard disk, you will erase all the programs and data 
 
 > Making noise
 
--   All speaker systems are driven by a sound card or chip that is installed inside your system unit.
+All speaker systems are driven by a sound card or chip that is installed inside your system unit.
 
 ![](images/speakers.png)
 
@@ -181,25 +168,45 @@ If you try to reformat your hard disk, you will erase all the programs and data 
 
 > Getting the picture
 
--   Computer monitors today are built around LCD (Liquid-crystal display) displays, just like you have on your living room TV.
+-   Computer monitors today are built around `LCD` (Liquid-crystal display) displays, just like you have on your living room TV.
 
 -   Most monitors today come with a widescreen display that has the same 16:9 (or 16:10) aspect ratio used to display widescreen movies.
 
 -   `Resolution` refers to the size of the images that can be displayed onscreen and is measured in pixels. A `pixel` is a single dot on your screen; a full picture is composed of thousands of pixels.
 
-    -   Most external monitors today can display 1920-1080 or higher resolution (called full high definition, or FHD).
+    -   Most external monitors today can display 1920-1080 or higher resolution (called full high definition, or `FHD`).
 
-## Other parts of your computer system
-
--   Printers: to make hard copy of documents and pictures, also includes copying, scanning, and even faxing capability.
-
--   Webcams: Small cameras to send live video
-
--   Joysticks and gamepads: to play the most challenging computer games.
-
--   External storage: Just like the hard disk or solid state drives inside your computer, but they connect externally to help you back up your precious data.
+## Other parts of your computer
 
 Other devices connect using a special type of cable called a *`USB`* (Universal Serial Bus) cable. All computers have multiple USB connections (sometimes called *`ports`*).
+
+<br>
+
+![](https://upload.wikimedia.org/wikipedia/commons/d/d6/Usb_connectors.JPG)
+
+## Printers 
+
+To make hard copy of documents and pictures, also includes copying, scanning, and even faxing capability.
+
+![](https://upload.wikimedia.org/wikipedia/commons/7/72/HP_Laserjet_5_DN_1.jpg)
+
+## Webcams 
+
+Small cameras to send live video
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Logicool_StreamCam_%28cropped%29.jpg/1920px-Logicool_StreamCam_%28cropped%29.jpg)
+
+## Joysticks and game pads
+
+To play the most challenging computer games.
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Joyopis.svg/1280px-Joyopis.svg.png)
+
+## External storage 
+
+Just like the hard disk or solid state drives inside your computer, but they connect externally to help you back up your precious data.
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/WD_External_Hard_Drives_IMG_7899.jpg/2560px-WD_External_Hard_Drives_IMG_7899.jpg)
 
 ## Software and Apps
 
@@ -214,43 +221,85 @@ Other devices connect using a special type of cable called a *`USB`* (Universal 
     -   change pics or videos = `photo-editing` software
     -   to surf internet = need a `web browser`
 
-## Making everything work -- with Windows
+## Making everything work with OS
 
+:::: {.columns}
+
+::: {.column width="30%"}
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Operating_system_placement.svg/1384px-Operating_system_placement.svg.png){fig-align="center"}
+:::
+
+::: {.column width="70%"}
+<br>
 -   You interface with your computer via a special piece of software called an `operating system`.
 
 -   This program makes your system operate; it is your gateway to the hardware part of your system.
+:::
 
--   Most computers today come with an OS called `Microsoft Windows`. It is around 35 years old and is published by Microsoft Corporation.
+::::
 
--   Computers manufactured by Apple Computing use a different operating system, call `macOS`.
+## Famous Operating Systems
 
--   Google OS is `Chrome` and for high-tech people another OS is `Linux`.
+<br>
 
-# Setting Up and Using Different Types of Computers
+![](https://n7b3p4s2.stackpathcdn.com/article/what-is-the-most-popular-operating-system/Images/TOP%20OS.jpg)
 
-## Laptop or 2-in-1 PC
+Most computers today come with an OS called `Microsoft Windows`. It is around 35 years old and is published by Microsoft Corporation.
 
--   Laptop also called notebook today are the most popular PC.
+## Laptop
 
--   Elements of a laptop PC
+Laptop also called notebook today are the most popular PC.
 
+:::: {.columns}
+
+::: {.column width="50%"}
 ![](images/laptop.png)
+:::
 
-## Laptop or 2-in-1 PC
-
--   Laptop also called notebook today are the most popular PC.
-
--   Elements of a laptop PC
-
+::: {.column width="50%"}
 ![](images/laptop-side.png)
+:::
+
+::::
+
+## Convertible laptop
+> 2-in-1 PC or 2-in-1 tablet
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/HP_Spectre_x360_2016_%2832003550180%29.jpg/2560px-HP_Spectre_x360_2016_%2832003550180%29.jpg)
 
 ## All-in-One Desktop PC
 
+:::: {.columns}
+
+::: {.column width="50%"}
+![](https://upload.wikimedia.org/wikipedia/commons/4/49/Dell_Inspiron_One_23_Touch_AIO_Desktop_PC.png)
+:::
+
+::: {.column width="50%"}
 ![](images/all-in-one.png)
+:::
+
+::::
 
 ## Traditional Desktop PC
 
-![](images/desktop.png)
+:::: {.columns}
+
+::: {.column width="50%"}
+![](https://upload.wikimedia.org/wikipedia/commons/b/b6/Desktop_personal_computer.jpg){width=400}
+:::
+
+::: {.column width="50%"}
+![](images/desktop.png){width=400}
+:::
+
+::::
+
+# 
+
+[using]{.r-fit-text .centering}
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Windows_logo_and_wordmark_-_2021.svg/2880px-Windows_logo_and_wordmark_-_2021.svg.png){fig-align="center"}
 
 ## Know Windows 11
 
@@ -296,6 +345,9 @@ If you try to close a window that contains a document you haven't saved, you're 
 
 ::: columns
 ::: {.column width="80%"}
+
+<br>
+<br>
 
 ::: callout-tip
 On touch pad use two fingers to move the page up or down
@@ -387,11 +439,17 @@ Click or tap one of the icons the middle of the notifications area on the taskba
 
 ![](images/notifications.png)
 
+## Shutting Down Windows & PC
+
+> You *always* want to turn off things through the official Windows procedure.
+
+![](images/shutdown.png)
+
 ## Important Windows Shortcuts
 
 Some shortcuts you can use to speed up important Windows operations.
 
-| Operation                                 | Keyboard               | Mouse/Touchpad                                                                       |
+| `Operation`                                 | `Keyboard`               | `Mouse/Touchpad`                                                                       |
 |-------------------------------------------|------------------------|--------------------------------------------------------------------------------------|
 | Close currently running app or window     | Alt + F4               | Click the X button in top-right corner of window.                                    |
 | Display context-sensitive options menu    | Application (menu) key | Right-click.                                                                         |
@@ -412,17 +470,13 @@ Some shortcuts you can use to speed up important Windows operations.
 | View or switch to other virtual desktops  | Windows + Tab          | Click Task View button on taskbar.                                                   |
 |                                           |                        |                                                                                      |
 
-: Essential Windows 11 Operations
 
-## Shutting Down Windows & PC
 
-> You *always* want to turn off things through the official Windows procedure.
+# { background-image="https://images.unsplash.com/photo-1586775490184-b79f0621891f?auto=format&fit=crop&q=80&w=2940&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" background-size="cover"}
 
-![](images/shutdown.png)
+[Working with Files, <br> Folders, and <br> Online Storage<br><br>]{.r-fit-text .right}
 
-# Ch-4 Working with Files, Folders, and Online Storage
-
-## Working with Files, Folders, and Online Storage
+## Working with Files, Folders, & Online Storage
 
 - Managing the data stored on your computer is vital. 
 
@@ -446,9 +500,11 @@ Some shortcuts you can use to speed up important Windows operations.
   - the `name` (to the left of the period) and
   - the `extension` (to the right of the period)
   
-- A filename can consist of letters, numbers, spaces, and characters and looks something like this: filename.ext  
+- A filename can consist of letters, numbers, spaces, and characters and looks something like this: `filename.ext`  
 
 ## Understanding Files and Folders
+
+![](https://www.tenforums.com/geek/gars/images/2/types/thumb_14486407500Folder.png){width=50}
 
 - Windows stores files in `folders`.
 
@@ -482,27 +538,9 @@ You can launch File Explorer in one of four ways:
 
 1. Press Windows+E on your computer keyboard.
 
-## Exploring the File Explorer Window
+## File Explorer Window
 
-:::: {.columns}
-
-::: {.column width="30%"}
-- you see a toolbar on the top, 
-
-- a Path bar beneath that, 
-
-- a Navigation pane on the left, and 
-
-- a contents pane on the right. 
-
-- The Navigation pane is divided into several sections.
-:::
-
-::: {.column width="70%"}
 ![](images/file-explore.png)
-:::
-
-::::
 
 ## Navigation Pane
 
@@ -526,9 +564,9 @@ The Navigation pane is divided into several sections.
 
 ::::
 
-## Displaying File Contents and Details
+## Display File Contents & Details
 
-To display the Details or the Preview pane, select View, Show and then select either Details Pane or Preview Pane.
+To display the Details or the Preview pane, select `View` and then select either Details `Pane` or `Preview Pane`.
 
 ![](images/detail-pane.png)
 
@@ -540,12 +578,6 @@ To display the Details or the Preview pane, select View, Show and then select ei
 To move back to the disk or folder previously selected, click the Back button (left arrow) in the Path bar beneath the toolbar.
 
 - To choose from the history of disks and folders previously viewed, click the down arrow in the Address box in the Path bar and select a disk or folder.
-
-- If you’ve moved back through multiple disks or folders, you can move forward to the next folder by clicking the Forward button (right arrow) in the Path bar.
-
-- Go directly to any disk or folder by entering the path in the Address box (in the format c:\folder\subfolder) and pressing Enter.
-
-- Move backward through the “bread crumb” path in the Address box. Click any previous folder location (separated by arrows) to display that particular folder.
 
 ## Viewing Files and Folders
 > File Explorer has several options to change the way your files and folder display.
@@ -584,8 +616,6 @@ The Details view is better if you’re looking for files by date or size.
   - Categories, 
   - Tags, or 
   - Title.
-
-- To change the sort order of your files, click or tap View on the toolbar and then select either Ascending or Descending.
 
 ## Grouping Files and Folders
 

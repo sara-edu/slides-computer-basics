@@ -17,6 +17,7 @@ format:
     transition: convex
     background-transition: convex
     scrollable: true
+    fig-align: center
 knitr:
   opts_chunk: 
     echo: true
@@ -25,7 +26,7 @@ knitr:
 
 # {background-image="https://images.unsplash.com/photo-1495465798138-718f86d1a4bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" background-size="cover"}
 
-[Computer Basics]{.r-fit-text .theme-navy-blue}
+[COMPUTER BASICS]{.centering .r-fit-text .theme-navy-blue}
 
 <br>
 
@@ -36,9 +37,11 @@ knitr:
 :::
 
 ::: {.column width="60%"}
-[Ajay Koli | SaRA Institute of Data Science | India]{.r-fit-text}
+[Ajay Koli | SARA Institute of Data Science | India]{.r-fit-text}
 
 [Background image by [Freddie Marriage](https://unsplash.com/@fredmarriage)]{.small}
+<br>
+<br>
 :::
 
 ::::
@@ -58,24 +61,23 @@ library(palmerpenguins)
 
 :::: {.columns}
 
-::: {.column width="50%"}
+::: {.column width="40%"}
 <br>
 <br>
 ![](images/ajay.png)
 :::
 
-::: {.column width="50%"}
+::: {.column width="60%"}
 
 <br>
-<br>
 
-[Hello there!!]{.r-fit-text .theme-hello .theme-navy-blue}
+[Jai Bhim!]{.r-fit-text .theme-hello .theme-navy-blue}
 
 {{< fa circle-user >}} [Dr. Ajay Kumar Koli](https://koliajay.netlify.app/) 
 
 {{< fa award >}} Founder & Executive Director
 
-{{< fa play >}} [SaRa Institute of Data Science](https://saraedu.netlify.app/)
+{{< fa play >}} [SARA Institute of Data Science](https://saraedu.netlify.app/)
 
 {{< fa brands twitter >}} [@sara_institute](https://twitter.com/sara_institute)
 
@@ -89,9 +91,9 @@ library(palmerpenguins)
 
 ## References
 
-These slides are prepared largely using the information from the book "Computer Basics: Absolute Beginner's Guide" (10th edition, 2023) by Michael Miller. 
+These slides are prepared using this book "Computer Basics: Absolute Beginner's Guide" (10th edition, 2023) by Michael Miller. 
 
-![](images/book.png)
+![](images/book.png){fig-align='center'}
 
 
 ## Table of content {#sec-toc}
@@ -111,13 +113,24 @@ These slides are prepared largely using the information from the book "Computer 
 
 ## Computers
 
+:::: {.columns}
+
+::: {.column width="50%"}
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Ibm_pc_5150.jpg/1920px-Ibm_pc_5150.jpg)
+:::
+
+::: {.column width="50%"}
+<br>
+
 - Mid 1980s.
 
 - First time you sit in front of computer.
 
 - In 21st century computers are extremely important part of our life.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Ibm_pc_5150.jpg/1920px-Ibm_pc_5150.jpg)
+:::
+
+::::
 
 ##  🧗🏽‍♀️ Goals
 
@@ -135,9 +148,9 @@ These slides are prepared largely using the information from the book "Computer 
 
 - Searching information, sending and receiving email, using social media/networking.
 
-# [Understanding <br> Computers]{.r-fit-text .centering}
+# {background-image="https://upload.wikimedia.org/wikipedia/commons/a/a3/ThinkCentre_S50.jpg" background-size="cover" background-opacity="0.3" background-color="#000000"}
 
-[1. How personal computers work]{.r-fit-text}
+[Understanding <br> Computers]{.r-fit-text .centering}
 
 {{< include understand-pc.qmd >}}
 

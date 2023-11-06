@@ -1,0 +1,10 @@
+---
+format: 
+  revealjs:
+    scrollable: true
+    theme: [default, sara-style.scss]
+knitr:
+  opts_chunk: 
+    echo: true
+---
+

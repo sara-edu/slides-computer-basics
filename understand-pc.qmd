@@ -221,7 +221,7 @@ Just like the hard disk or solid state drives inside your computer, but they con
     -   change pics or videos = `photo-editing` software
     -   to surf internet = need a `web browser`
 
-## Making everything work with OS
+## Make everything work with OS
 
 :::: {.columns}
 
@@ -231,9 +231,10 @@ Just like the hard disk or solid state drives inside your computer, but they con
 
 ::: {.column width="70%"}
 <br>
--   You interface with your computer via a special piece of software called an `operating system`.
 
--   This program makes your system operate; it is your gateway to the hardware part of your system.
+- You interface with your computer via a special piece of software called an `operating system`.
+
+- This program makes your system operate; it is your gateway to the hardware part of your system.
 :::
 
 ::::
@@ -242,7 +243,7 @@ Just like the hard disk or solid state drives inside your computer, but they con
 
 <br>
 
-![](https://n7b3p4s2.stackpathcdn.com/article/what-is-the-most-popular-operating-system/Images/TOP%20OS.jpg)
+![](images/operating-systems.png)
 
 Most computers today come with an OS called `Microsoft Windows`. It is around 35 years old and is published by Microsoft Corporation.
 
@@ -295,7 +296,7 @@ Laptop also called notebook today are the most popular PC.
 
 ::::
 
-# 
+# {background-color="#000000"}
 
 [using]{.r-fit-text .centering}
 
@@ -471,10 +472,9 @@ Some shortcuts you can use to speed up important Windows operations.
 |                                           |                        |                                                                                      |
 
 
+# { background-image="https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&q=80&w=2952&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" background-size="cover" background-opacity="0.3" background-color="#000000"}
 
-# { background-image="https://images.unsplash.com/photo-1586775490184-b79f0621891f?auto=format&fit=crop&q=80&w=2940&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" background-size="cover"}
-
-[Working with Files, <br> Folders, and <br> Online Storage<br><br>]{.r-fit-text .right}
+[Files, <br> Folders, and <br> Online Storage]{.r-fit-text .centering}
 
 ## Working with Files, Folders, & Online Storage
 
@@ -504,20 +504,30 @@ Some shortcuts you can use to speed up important Windows operations.
 
 ## Understanding Files and Folders
 
-![](https://www.tenforums.com/geek/gars/images/2/types/thumb_14486407500Folder.png){width=50}
+<br>
 
+:::: {.columns}
+
+::: {.column width="30%"}
+![](https://www.tenforums.com/geek/gars/images/2/types/thumb_14486407500Folder.png)
+:::
+
+::: {.column width="70%"}
 - Windows stores files in `folders`.
 
 - A folder is like a parent file; each folder can contain both files and additional folders.
 
 - The exact location of a file is called its `path` and contains all the folders leading to the file.
+:::
+
+::::
 
 ## Understanding Files and Folders
 
-For example, a file named filename.doc that exists in the system folder, which is itself contained in the windows folder on your C: drive, has a path that looks like this: `C:\users\yourname\documents\filename.doc`.
+For example, a file named `ajay_cv.doc` that exists in the system folder, which is itself contained in the windows folder on your C: drive, has a path that looks like this: `C:\users\yourname\documents\ajay_cv.doc`.
 
 ::: {.callout-tip}
-By default, Windows hides the extensions when it displays filenames. To display extensions in Windows 11, select View, Show, File Name Extensions.
+- By default, Windows hides the extensions when it displays filenames. To display extensions in Windows 11, select View, Show, File Name Extensions.
 :::
 
 ## Using File Explorer
@@ -532,11 +542,11 @@ You can launch File Explorer in one of four ways:
 
 1. From the taskbar, click or tap the File Explorer icon.
 
-1. Click or tap the Start button to display the Start menu; then click or tap the File Explorer icon.
+1. Click or tap the `Start` button to display the Start menu; then click or tap the `File Explorer` icon.
 
-1. Right-click the Start menu to display the Options menu; then click or tap File Explorer.
+1. Right-click the `Start` menu to display the Options menu; then click or tap File Explorer.
 
-1. Press Windows+E on your computer keyboard.
+1. Press `Windows+E` on your computer keyboard.
 
 ## File Explorer Window
 
@@ -547,15 +557,13 @@ You can launch File Explorer in one of four ways:
 :::: {.columns}
 
 ::: {.column width="70%"}
-The Navigation pane is divided into several sections.
+- `Quick Access:` your most recent used folders, as well as several folders that are "pinned" to this section: Desktop, Downloads, Documents, Pictures, and Videos.
 
-- Quick Access: your most recent used folders, as well as several folders that are "pinned" to this section: Desktop, Downloads, Documents, Pictures, and Videos.
+- `OneDrive` section: it lets your folders stored on Microsoft's OneDrive Internet-based storage service.
 
-- OneDrive section: it lets your folders stored on Microsoft's OneDrive Internet-based storage service.
+- Below` This PC` section provides access to all the disk drives and devices connected to your computer.
 
-- Below is This PC section: provides access to all the disk drives and devices connected to your computer.
-
-- Network section: to access all your networked computers.
+- `Network` section: to access all your networked computers.
 :::
 
 ::: {.column width="30%"}
@@ -570,23 +578,21 @@ To display the Details or the Preview pane, select `View` and then select either
 
 ![](images/detail-pane.png)
 
-## Navigating the Folders on Your PC
+## Navigate the Folders on Your PC
 
 > A subfolder is a folder that is contained within another folder. Multiple subfolders can be nested in this fashion.
 
-- To view the contents of a disk or folder, double-click or double-tap the selected item.
-To move back to the disk or folder previously selected, click the Back button (left arrow) in the Path bar beneath the toolbar.
+- To view the contents of a disk or folder, `double-click` or double-tap the selected item.
+
+- To move back to the disk or folder previously selected, click the Back button (left arrow) in the Path bar beneath the toolbar.
 
 - To choose from the history of disks and folders previously viewed, click the down arrow in the Address box in the Path bar and select a disk or folder.
 
 ## Viewing Files and Folders
-> File Explorer has several options to change the way your files and folder display.
 
 :::: {.columns}
 
 ::: {.column width="71%"}
-### Changing the way files display
-
 To change the file view, click or tap View in the toolbar.
 
 ::: {.callout-tip}
@@ -596,7 +602,7 @@ The Details view is better if you’re looking for files by date or size.
 :::
 
 ::: {.column width="29%"}
-![](images/files-display.png)
+![](images/files-display.png){width="300"}
 :::
 
 ::::
@@ -613,8 +619,7 @@ The Details view is better if you’re looking for files by date or size.
   - Date Created, 
   - Folder Path, 
   - Authors, 
-  - Categories, 
-  - Tags, or 
+  - Categories, or 
   - Title.
 
 ## Grouping Files and Folders
@@ -627,11 +632,11 @@ The Details view is better if you’re looking for files by date or size.
 
 ## Searching for Files
 
-- To use the Instant Search feature, enter one or more keywords into the Search box in the Path bar. Matching files display as you type; you can select one of these or finish entering the keyword(s) and then press Enter. 
+- To use the Instant Search feature, enter one or more keywords into the `Search box` in the Path bar. Matching files display as you type; you can select one of these or finish entering the keyword(s) and then press Enter. 
 
 - File Explorer displays a list of items that match your search criteria. Double-click or double-tap any icon to open that file.
 
-## Performing Basic File and Folder Operations
+## File and Folder Operations
 
 Use the functions availabe on the File Explorer toolbar.
 
@@ -655,9 +660,9 @@ To create a new folder, follow these steps:
 
 ::: {.callout-warning}
 
-- Folder and filenames can include up to 255 characters—including many special characters. Some special characters, however, are “illegal,” meaning that you can’t use them in folder or filenames. Illegal characters include the following: `\ / : * ? “ < > |`.
+- Folder and filenames can include up to 255 characters—including many special characters. Some special characters, however, are “illegal,” meaning that you can’t use them in folder or filenames. `Illegal characters` include the following: `\ / : * ? “ < > |`.
 
-- The one part of the filename you should never change is the extension—the part that comes after the “dot.” That’s because Windows and other software programs recognize different types of program files and documents by their extension. This is why, by default, Windows hides these file extensions—so you can’t change them by mistake.
+- The one part of the filename `you should never change is the extension`—the part that comes after the “dot.” That’s because Windows and other software programs recognize different types of program files and documents by their extension. This is why, by default, Windows hides these file extensions—so you can’t change them by mistake.
 
 :::
 
@@ -685,7 +690,7 @@ Copying a file lets you re-create that file in a different location, either on y
 
 1. Click or tap the Paste button on the toolbar.
 
-## Moving (Cutting and Pasting) Files
+## Moving (Cut and Paste) Files
 
 - Moving a file (or folder) is different from copying it. Moving cuts the item from one location and pastes it into a new location. Copying leaves the item in its original location and creates a copy of the item elsewhere.
 
@@ -712,100 +717,123 @@ To move a file, follow these steps:
 This simple operation sends the file to the Windows Recycle Bin
 
 ::: {.callout-tip}
-You can also delete a file by selecting it and then pressing the Delete key on your computer keyboard.
+- You can also delete a file by selecting it and then pressing the Delete key on your computer keyboard.
 :::
 
 ## Working with the Recycle Bin
 
-Recycle Bin is a special folder on your hard disk that temporarily stores all deleted items.
+:::: {.columns}
 
-#### Restoring Deleted Files
-
-If you’ve recently deleted a file, it should still be in the Recycle Bin folder.
-
-To “undelete” a file from the Recycle Bin, follow these steps:
-
-1. Double-click or double-tap the Recycle Bin icon on the desktop (shown in Figure 4.5) to open the Recycle Bin folder.
-
-1. Click or tap the file(s) you want to restore.
-
-1. From the toolbar, select More, Restore the Selected Items.
-
+::: {.column width="30%"}
 ![](images/bin.png)
+:::
+
+::: {.column width="70%"}
+<br>
+Recycle Bin is a special folder on your hard disk that temporarily stores all deleted items.
+:::
+
+::::
+
+### How to “undelete” or restore a file from the Recycle Bin?
 
 ## Emptying the Recycle Bin
+
+:::: {.columns}
+
+::: {.column width="30%"}
+![](images/bin.png)
+:::
+
+::: {.column width="70%"}
+<br>
 
 1. Double-click or double-tap the Recycle Bin icon on your desktop to open the Recycle Bin folder.
 
 1. Click or tap the Empty the Recycle Bin button on the toolbar.
 
 1. When the confirmation dialog box appears, click or tap Yes to completely erase the files; click or tap No to continue storing the files in the Recycle Bin.
+:::
 
-![](images/bin.png)
+::::
 
-## Working with Compressed Folders
+## Work with Compressed Folders
 
 > `Compressed folders` (sometimes called zip files) take big files and compress their size, which makes them easier to copy or move
 
+![](https://cdn.create.vista.com/api/media/small/152770372/stock-photo-hands-holding-overloaded-suitcase){fig-align="center"}
+
 ## Compressing a File
+
+:::: {.columns}
+
+::: {.column width="30%"}
+![](https://www.cedarville.edu/images/default-source/insights/zip-file-icon.jpg?sfvrsn=d34468_0)
+:::
+
+::: {.column width="70%"}
+<br>
 
 1. Select the file(s) you want to compress. (Hold down the Ctrl button as you select multiple files.)
 
 1. On the toolbar, select More (three dots), Compress to ZIP file.
 
-Compressed folder is distinguished by a little zipper on the folder icon.
-
-::: {.callout-note}
-The compressed folder is actually a file with a `.ZIP` extension, so you can use it with other compression/decompression programs, such as WinZip.
+1. Compressed folder is distinguished by a little zipper on the folder icon.
 :::
+
+::::
 
 ## Extracting Files from a Compressed Folder
 
-The process of decompressing a file is actually an extraction process. That’s because you extract the original file(s) from the compressed folder. Follow these steps:
+The process of decompressing a file is actually an extraction process. 
 
-1. Select the compressed folder.
+![](https://www.remosoftware.com/info/wp-content/uploads/2017/06/step1-open-rar-file.png)
 
-1. From the toolbar, select Extract All. This displays the Select a Destination and Extract Files dialog box.
+## Copy Files to Another Computer
 
-1. Accept the current location or click the Browse button and choose a different location.
+:::: {.columns}
 
-1. Click or tap the Extract button.
-
-## Copying Files to Another Computer
-
-Of course, you’re not limited to copying and moving files from one location to another on a single PC. You can also copy files to other PCs via either a network connection or some sort of portable disk drive.
-
-- The most popular type of portable drive today is the USB drive (sometimes called a flash drive or thumb drive).
-
+::: {.column width="40%"}
 ![](images/usb.png)
+:::
 
-## How to use USB
+::: {.column width="60%"}
+<br>
 
-1. To use a USB drive, simply insert the device into an open USB port on your computer. 
+The most popular type of portable drive today is the `USB` drive (sometimes called a pen drive or flash drive or thumb drive).
+:::
 
-1. After you insert it, the drive appears as a new drive in the This PC section of the File Explorer navigation pane. 
+::::
 
-1. Double-click or double-tap the USB drive icon to view the contents of the drive; 
+## How to use USB:
 
-1. you can then copy and paste files from your hard drive to the USB drive and vice versa. 
+1. Insert the device into an open USB port on your computer. 
 
-1. When you finish copying files, just remove the USB device. It’s that simple.
+1. After you insert it, the drive appears as a new drive in the `This PC` section of the File Explorer navigation pane. 
+
+1. Double-click or double-tap the USB drive icon to view the contents of the drive.
+
+1. Then copy and paste files from your hard drive to the USB drive and vice versa. 
+
+When you finish copying files, just remove the USB device (`Eject` safely).
 
 ## Copying Files via Email {{< fa envelope >}}
 
-- You can send any file as an email attachment; a file is literally attached to an email message. 
+- You can send any file as an email `attachment`; a file is literally attached to an email message. 
 
 - When the message is sent, the recipient can open or save the attached file when reading the message.
 
-## Working with Cloud-Based Storage
+## ![](https://preview.redd.it/uns09pyvenq71.png?auto=webp&s=9632168a4f227db7e1c5d4d36bbc44cf7bba1579){width=550 fig-align='center'}
 
-Microsoft offers online storage for all your documents and data, via its `OneDrive` service. When you store your files on OneDrive, you can access them via any computer or mobile device connected to the Internet.
+## Work with Cloud-Based Storage
 
-This type of online file storage is called `cloud storage` because the files are stored on the "cloud" of computers on the internet.
+- Microsoft offers online storage for all your documents and data, via its `OneDrive` service. When you store your files on OneDrive, you can access them via any computer or mobile device connected to the Internet.
 
-It’s all up to you, and all available to any person with a web browser and an Internet connection.
+- This type of online file storage is called `cloud storage` because the files are stored on the "cloud" of computers on the internet.
 
-## Accessing OneDrive from File Explorer
+- It’s all up to you, and all available to any person with a web browser, password permission and an Internet connection.
+
+## Access OneDrive from File Explorer
 
 From within File Explorer, click or tap OneDrive in the navigation pane. This displays all your OneDrive files and folders.
 
@@ -813,18 +841,15 @@ From within File Explorer, click or tap OneDrive in the navigation pane. This di
 
 ## Using Microsoft OneDrive
 
-1. From within any web browser, go to onedrive.live.com and either sign into an existing account or sign up for a new one.
-
-1. As you can see in below Figure, the OneDrive website displays the files you uploaded. If you organized your files into folders, you see those folders on the main page. Click a folder to view its contents.
+From within any web browser, go to onedrive.live.com and either sign into an existing account or sign up for a new one.
 
 ![](images/onedrive.png)
 
-
 ::: {.callout-note}
-Microsoft gives you 5GB of storage in your free OneDrive account
+- Microsoft gives you 5GB of storage in your free OneDrive account
 :::
 
-## Syncing Files on Your PC to OneDrive
+## Sync Files on Your PC to OneDrive
 
 To synchronize a file in this fashion, it must be stored in a special OneDrive folder. Then, whenever you connect to the Internet, any changes you make to that file are automatically made to the version of that file stored on OneDrive.
 
@@ -832,7 +857,72 @@ To synchronize a file in this fashion, it must be stored in a special OneDrive f
 `Microsoft OneDrive` is just one of many cloud storage services you can use to store and share your files online. Other popular services include `Apple iCloud` (www.icloud.com), `Box` (www.box.com), `Dropbox` (www.dropbox.com), and `Google Drive` (www.google.com/drive/). All these services work in a similar fashion. Check out the various services before you commit—especially for a paid plan.
 :::
 
+# { background-image="https://images.unsplash.com/photo-1612526765217-b549cae6d491?auto=format&fit=crop&q=80&w=2946&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" background-size="cover" background-opacity="0.2" background-color="#000000"}
 
+[Personalizing <br> Windows]{.r-fit-text .centering}
+
+## Personalizing the Windows
+
+- Reflect your personality
+
+- Change color scheme
+
+- Change desktop background
+
+- "light" and "dark" modes
+
+## Change desktop background
+
+Default picture | Your favorite picture | Any solid color
+
+![](images/background-desktop.png)
+
+## Light or dark mode
+
+![](images/mode.png)
+
+## Choosing an accent color
+
+Color for window borders and title bars
+
+![](images/accent-color.png)
+
+## Chossing a Windows theme
+
+![](images/themes.png)
+
+## Customize the Start menu
+
+![](images/menu-start.png)
+
+## Customize the Taskbar
+
+![](images/taskbar.png)
+
+
+## Personalize Lock Screen
+
+Change background | Display slideshow
+
+![Lockscreen](images/lockscreen1.png)
+
+## Change Account Picture
+
+![](images/picture-accounts.png)
+
+## Additional User Accounts
+
+Create new user account | Switching Users | Signing out
+
+![](images/user-accounts.png)
+
+## Windows Settings
+
+![](images/window-settings.png)
+
+## System Settings
+
+![](images/system-settings.png)
 
 
 

@@ -823,7 +823,7 @@ When you finish copying files, just remove the USB device (`Eject` safely).
 
 - When the message is sent, the recipient can open or save the attached file when reading the message.
 
-## ![](https://preview.redd.it/uns09pyvenq71.png?auto=webp&s=9632168a4f227db7e1c5d4d36bbc44cf7bba1579){width=550 fig-align='center'}
+## {background-image="https://preview.redd.it/uns09pyvenq71.png?auto=webp&s=9632168a4f227db7e1c5d4d36bbc44cf7bba1579" background-size="contain"}
 
 ## Work with Cloud-Based Storage
 
@@ -923,80 +923,4 @@ Create new user account | Switching Users | Signing out
 ## System Settings
 
 ![](images/system-settings.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

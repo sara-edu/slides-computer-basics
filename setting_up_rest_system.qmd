@@ -8,3 +8,533 @@ knitr:
     echo: true
 ---
 
+## 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+<br>
+<br>
+<br>
+<br>
+[Connecting Printers <br>and Other Devices <br>to your PC]{.centering .r-fit-text}
+:::
+
+::: {.column width="50%"}
+![](https://images.unsplash.com/photo-1616578273577-5d54546f4dec?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHVzYiUyMHR5cGVzfGVufDB8fDB8fHww){width=400}
+:::
+
+::::
+
+## Most popular peripherals
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- Game pad or other game controller
+
+- Hard disk drive
+
+- Keyboard
+
+- Memory card reader
+
+- Monitor
+
+- Mouse
+
+- Printer
+
+:::
+
+::: {.column width="50%"}
+
+- Solid-state drive
+
+- Sound card
+
+- Speakers
+
+- USB memory device
+
+- Video card
+
+- Webcam
+
+- Wireless network adapter
+
+- Wireless router
+:::
+
+::::
+
+## Understanding Ports
+
+A port is simply an interface between your PC and another device either internally or externally.
+
+![](images/port.png)
+
+## Understanding USB
+
+The most common external connector today is the Universal Serival Bus.
+
+![](https://cdn.shopify.com/s/files/1/0027/5683/7411/files/img-bp-usb-cable-text-1c-mb.jpg){width=60%}
+
+## Connect & use a printer
+
+`Device Driver:` It is a small software program that enables your PC to communicate with and control a specific device.
+
+![](https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+
+## Types of printers
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### Inkjet printers
+
+- Shoot ink jets on the paper
+
+- Slow and less costly
+
+- Ideal for home use
+:::
+
+::: {.column width="50%"}
+### Laser pritners
+
+- Like photo-copy
+
+- Fast but costly
+
+- Ideal for commercial purpose
+:::
+
+::::
+
+## Ways to connect printers
+
+- Connecting a printer via USB
+
+- Connecting a wireless printer to your computer
+
+- Sharing a network printer
+
+- Printing to your system's printer
+
+## Connect protable devices/gadgets to your PC
+
+- Gadgets that you use on their own but plug into your PC to share files -- smartphones, digital cameras, and USB memory devices.
+
+- You can transfer files either from your PC to the portable device, or vice versa.
+
+## Connect your PC to your living room TV
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](images/hdmi-port.png)
+:::
+
+::: {.column width="50%"}
+
+- Connect via HDMI (High-definition multimedia interface)
+
+- Wirelessly mirroring your computer screen
+
+  - PC and TV on same WiFi
+  
+  - Miracast technology
+:::
+
+::::
+
+## Understand external Storage
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="30%"}
+![](images/harddisk-external.png)
+:::
+
+::: {.column width="70%"}
+- External hard disk and SSD drives let you add extra storage capacity to your system—up to 16TB extra.
+
+- You can use an external drive to back up valuable data from your main internal drive.
+
+- Also available are online backup services, which back up your data over the Internet.
+:::
+
+::::
+
+## 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+<br>
+<br>
+<br>
+<br>
+[Setting Up<br>a Home Network]{.centering .r-fit-text}
+:::
+
+::: {.column width="50%"}
+![](https://images.unsplash.com/photo-1569144157596-10825eecdde2?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D){width=400}
+:::
+
+::::
+
+## Computer network
+
+> To connect two or more computers or to share an Interent connection in your home.
+
+### Networks work
+
+- Wired network is faster and more secure.
+
+- Wireless network is more convenient (no wires).
+
+## Wired networks
+
+- A wired network is the kind that requires you to run a bunch of cables from each PC to a central hub or router.
+
+- How quickly data is transferred across a network is measured in megabits per second, or `Mbps`. The bigger the Mbps number, the faster the network—and faster is always better than slower.
+
+## Wireless networks
+
+- It uses radio frequency (RF) signals to connect to one computer to another.
+
+- It is known as Wi-Fi.
+
+## Wireless network
+
+![](images/wireless-network.png)
+
+## 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+<br>
+<br>
+<br>
+<br>
+[Internet at Home and Away]{.centering .r-fit-text}
+:::
+
+::: {.column width="50%"}
+![](https://images.unsplash.com/photo-1569144157596-10825eecdde2?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D){width=400}
+:::
+
+::::
+
+## Types of home internet
+
+- `ISP (Internet Service Provider)`: a company that provides your home with a connection to the Internet.
+
+- `Broadband` internet connection:
+  - Cable
+  - Digital subscriber (DSL)
+  - Fiber optic
+  - Satellite
+
+- `Modem`: A little black box that connects directly to your computer or to a wireless router. 
+
+## Connect to a Public Wi-Fi
+
+- `Hotspot`: A hotspot is a public place that offers wireless access to the Internet using Wi-Fi technology. Some hotspots are free for all to access; others require some sort of payment.
+
+![](images/hotspot.png)
+
+## Browsing and searching the Web
+
+- You surf the Web with a web browser.
+
+- `Web Browser`
+  - Home page
+  - Search engine like Google, Duck Duck Go etc
+  - Bookmark
+  - Add-ons
+  - Settings & passwords
+  - Tab and pinned tabs
+  - Start from where you end the browser
+  - mode and themes
+  - ad blocker
+
+## Sending and Receiving Email
+
+- Email: short for electronic mail
+
+- Each email address is unique and has three parts:
+  - The user's name
+  - The `@` sign
+  - The user's domain name
+  
+- Two ways to send email
+  - POP\IMAP: Post Office Protocol/Internet Message Access Protocol - they require a separate email program.
+  - Web based email: send and receive email from any web browser.
+  
+## Learn about email
+
+- Inbox
+
+- Compose
+
+- Trash
+
+- Draft
+
+- Contact
+
+- Signature
+
+- CC or BCC
+
+## Install and use application
+
+- Download software/application from the internet
+
+- Install the app from the folder where the app file is downloaded.
+
+- Always install app as an administrator
+
+#
+
+:::: {.centering}
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Drive_icon_%282020%29.svg/1920px-Google_Drive_icon_%282020%29.svg.png){width=40%}
+
+[GOOGLE DRIVE]{.r-fit-text}
+
+::::
+
+<br>
+
+::: aside
+Information for these slides are adapted from <https://support.google.com>
+:::
+
+## Google Drive
+
+> It is a file storage and synchronization service developed by Google.
+
+- It was launched on 24 April, 2012.
+
+- It allows users to store files in the cloud, synchronize files across devices, and share files.
+
+## Google Drive: `File Types`
+
+![](images/gdrive-files.png)
+
+## Google Drive: `Options`
+
+![](images/gdrive-bar.png)
+
+## Google Drive: `+ New`
+
+![](images/gdrive-new.png)
+
+## Google Docs {background-color="#000000"}
+
+> [`Write reports, create joint project proposals, keep track of meeting notes, and more.`]{.theme-white}
+
+![](images/gdoc.png)
+
+## Google Docs: `New`
+
+![](images/gdoc-new.png)
+
+## Google Docs: `Edit Text`
+
+![](images/gdoc-edit.png)
+
+## Google Docs
+> Add images, tables, links and more
+
+- `Image:` Insert an image from your computer, the web, Drive, and more.
+
+- `Table:` Select the number of columns and rows to create a table.
+
+- `Drawing:` Create pictures, flowcharts, diagrams, and more.
+
+- `Link:` Add a link to a webpage or a header or bookmark in your document.
+
+- `Chart:` Add different types of charts, or add a chart from Sheets.
+
+- `Bookmark:` Add shortcuts to specific places within your document.
+
+- `Table of contents:` Create an autogenerated table of contents that links to each heading (where you’ve applied heading styles).
+
+## Google doc: `search`
+
+![](images/gdoc-search.png)
+
+## Google Doc
+
+> Copy, email, or version your document
+
+- `Make a copy:` Create a duplicate of your document.
+
+- `Download as:` Download your document in other formats, such as Microsoft Word or Adobe PDF.
+
+- `Email as attachment:` Send a copy of the document to people. You can change the format.
+
+- `Version history:` See all the changes you and others have made to the document or revert to earlier versions.
+
+- `Publish to the web:` Publish a copy of your document as a webpage, or embed your document in a website.
+
+## Google Doc: `Share`
+
+<br>
+
+![](images/gdoc-share.png)
+
+## Google Doc: `Collaborate`
+
+<br>
+
+![](images/gdoc-collaborate.png)
+
+## Google Sheet {background-color="#000000"}
+
+> [`Create spreadsheets for your data and collaborate with your colleagues.`]{.theme-white}
+
+![](images/gsheet.png)
+
+## Google Sheet: `New`
+
+<br>
+
+![](images/gsheet-new.png)
+
+## Google Sheet: `Work with data`
+
+<br>
+
+![](images/gsheet-work.png)
+
+## Google Sheet
+
+> `Add rows, columns, and cells:`
+
+1. Select the row, column, or cell near where you want to add your new entry.
+    
+1. Right-click the highlighted row, column, or cell > **Insert** > choose where to insert the new entry.
+
+## Google Sheet
+
+> `Delete, clear, or hide rows and columns:`
+
+1. Right-click the row number or column letter.
+    
+1. Click Delete, Clear, or Hide.
+
+## Google Sheet
+
+> `Delete cells:`
+
+1. Select the cells.
+    
+1. Right-clickand thenDelete cellsand thenShift left or Shift up.
+
+Move rows or columns: Select the row number or column letter and drag it to a new location.
+
+## Google Sheet
+
+> `Move cells:`
+
+1. Select the cells.
+
+1. Point your cursor to the top of the selected cells until a hand appears.
+
+1. Drag the cells to a new location.
+
+## Google Sheet
+
+> `Group rows or columns:`
+
+1. Select the rows or columns.
+
+1. Click Dataand thenGroup rows or Group columns.
+
+Freeze header rows and columns: Keep a row or column in the same place as you scroll through your spreadsheet. On the menu bar, click Viewand thenFreeze and choose an option.
+
+## Google Sheet: `Share`
+
+<br>
+
+![](images/gsheet-share.png)
+
+## Google Sheet: `Collabrate`
+
+<br>
+
+![](images/gsheet-collab.png)
+
+## Google Sheet
+
+> Copy, email, or publish your spreadsheet
+
+- `Make a copy`—Create a duplicate of your spreadsheet. This is a great way to create templates.
+
+- `Download as`—Download your spreadsheet in other formats, such as Excel or PDF.
+
+- `Email as attachment`—Email a copy of your spreadsheet.
+
+- `Version history`—See all the changes you and others have made to the spreadsheet or revert to earlier versions.
+
+- `Publish to the web`—Publish a copy of your spreadsheet as a webpage or embed your spreadsheet in a website.
+
+## Google Slide {background-color="#000000"}
+
+> `Create & collaborate with your team on professional pitch decks, project presentations, training modules, & more.`
+
+![](images/gslide.png)
+
+## Google Slides: `New`
+
+<br>
+
+![](images/gslide-new.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -8,24 +8,6 @@ knitr:
     echo: true
 ---
 
-## 
-
-:::: {.columns}
-
-::: {.column width="50%"}
-<br>
-<br>
-<br>
-<br>
-[Connecting Printers <br>and Other Devices <br>to your PC]{.centering .r-fit-text}
-:::
-
-::: {.column width="50%"}
-![](https://images.unsplash.com/photo-1616578273577-5d54546f4dec?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHVzYiUyMHR5cGVzfGVufDB8fDB8fHww){width=400}
-:::
-
-::::
-
 ## Most popular peripherals
 
 :::: {.columns}
@@ -124,11 +106,21 @@ The most common external connector today is the Universal Serival Bus.
 
 - Printing to your system's printer
 
-## Connect protable devices/gadgets to your PC
+## Connect protable devices
 
+:::: {.columns}
+
+::: {.column width="50%"}
+![](https://images.unsplash.com/photo-1569144157596-10825eecdde2?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D){width=70%}
+:::
+
+::: {.column width="50%"}
 - Gadgets that you use on their own but plug into your PC to share files -- smartphones, digital cameras, and USB memory devices.
 
 - You can transfer files either from your PC to the portable device, or vice versa.
+:::
+
+::::
 
 ## Connect your PC to your living room TV
 
@@ -171,23 +163,6 @@ The most common external connector today is the Universal Serival Bus.
 
 ::::
 
-## 
-
-:::: {.columns}
-
-::: {.column width="50%"}
-<br>
-<br>
-<br>
-<br>
-[Setting Up<br>a Home Network]{.centering .r-fit-text}
-:::
-
-::: {.column width="50%"}
-![](https://images.unsplash.com/photo-1569144157596-10825eecdde2?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D){width=400}
-:::
-
-::::
 
 ## Computer network
 
@@ -195,9 +170,9 @@ The most common external connector today is the Universal Serival Bus.
 
 ### Networks work
 
-- Wired network is faster and more secure.
+- `Wired network`: It is faster and more secure.
 
-- Wireless network is more convenient (no wires).
+- `Wireless network`: It is more convenient (no wires).
 
 ## Wired networks
 
@@ -215,25 +190,7 @@ The most common external connector today is the Universal Serival Bus.
 
 ![](images/wireless-network.png)
 
-## 
-
-:::: {.columns}
-
-::: {.column width="50%"}
-<br>
-<br>
-<br>
-<br>
-[Internet at Home and Away]{.centering .r-fit-text}
-:::
-
-::: {.column width="50%"}
-![](https://images.unsplash.com/photo-1569144157596-10825eecdde2?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D){width=400}
-:::
-
-::::
-
-## Types of home internet
+## Internet at Home
 
 - `ISP (Internet Service Provider)`: a company that provides your home with a connection to the Internet.
 
@@ -247,7 +204,7 @@ The most common external connector today is the Universal Serival Bus.
 
 ## Connect to a Public Wi-Fi
 
-- `Hotspot`: A hotspot is a public place that offers wireless access to the Internet using Wi-Fi technology. Some hotspots are free for all to access; others require some sort of payment.
+`Hotspot`: A hotspot is a public place that offers wireless access to the Internet using Wi-Fi technology. Some hotspots are free for all to access; others require some sort of payment.
 
 ![](images/hotspot.png)
 
@@ -309,7 +266,7 @@ The most common external connector today is the Universal Serival Bus.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Drive_icon_%282020%29.svg/1920px-Google_Drive_icon_%282020%29.svg.png){width=40%}
 
-[GOOGLE DRIVE]{.r-fit-text}
+[GOOGLE DRIVE]{#sec-gdrive .r-fit-text}
 
 ::::
 
@@ -490,7 +447,7 @@ Freeze header rows and columns: Keep a row or column in the same place as you sc
 
 - `Publish to the web`—Publish a copy of your spreadsheet as a webpage or embed your spreadsheet in a website.
 
-## Google Slide {background-color="#000000"}
+## Google Slides {background-color="#000000"}
 
 > `Create & collaborate with your team on professional pitch decks, project presentations, training modules, & more.`
 
@@ -501,6 +458,52 @@ Freeze header rows and columns: Keep a row or column in the same place as you sc
 <br>
 
 ![](images/gslide-new.png)
+
+## Google Slides: 
+
+> Add and organize slides
+
+![](images/gslide-add.png)
+
+## Google Slides: 
+
+> Add content to slides
+
+![](images/gslide-content.png)
+
+## Google Slides: 
+
+- `Import slides`—Add slides from another presentation to your current slide deck.
+
+- `Make a copy`—Create a duplicate of your presentation. This is a great way to create templates.
+
+- `Download as`—Download your presentation in other formats such as Microsoft PowerPoint or Adobe PDF.
+
+- `Email as attachment`—Email a copy of your presentation.
+
+- `Version history`—See all the changes you and others have made to the presentation, or revert to earlier versions.
+
+- `Publish to the web`—Publish a copy of your presentation as a webpage, or embed your presentation in a website.
+
+## Google Drive
+
+![](images/gdrive-types.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

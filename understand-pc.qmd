@@ -63,6 +63,7 @@ Computer chips and circuit boards are connected to a big circuit called a ***`mo
 ## Microprocessor:
 > The main engine
 
+::::: {.centering}
 :::: {.columns}
 
 ::: {.column width="50%"}
@@ -77,7 +78,9 @@ Computer chips and circuit boards are connected to a big circuit called a ***`mo
 
 ::::
 
-- The specific chip that controls your entire computer system is buried on the motherboard. This chip is called a *microprocessor* or a *central processing unit (`CPU`)*. 
+:::::
+
+The specific chip that controls your entire computer system is buried on the motherboard. This chip is called a *microprocessor* or a *central processing unit (`CPU`)*. 
 
 - Its speed today is measured in *`gigahertz`* (*GHz*)
 
@@ -87,7 +90,7 @@ Computer chips and circuit boards are connected to a big circuit called a ***`mo
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Swissbit_2GB_PC2-5300U-555.jpg/2880px-Swissbit_2GB_PC2-5300U-555.jpg)
 
--   Your instructions to computer are temporarily held in the computer's random access memory (`RAM`).
+Your instructions to computer are temporarily held in the computer's random access memory (`RAM`).
 
 -   The more memory that's available in a machine, the more instructions and data that can be stored at one time.
 
@@ -200,7 +203,13 @@ Small cameras to send live video
 
 To play the most challenging computer games.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Joyopis.svg/1280px-Joyopis.svg.png)
+::: {layout-ncol=2}
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Joyopis.svg/1280px-Joyopis.svg.png){width=70%}
+
+![](https://images.unsplash.com/photo-1578898395216-78dae5d29344?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+
+:::
 
 ## External storage 
 
@@ -298,7 +307,7 @@ Laptop also called notebook today are the most popular PC.
 
 # {background-color="#000000"}
 
-[using]{.r-fit-text .centering}
+[USING]{#sec-using-windows .r-fit-text .centering}
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Windows_logo_and_wordmark_-_2021.svg/2880px-Windows_logo_and_wordmark_-_2021.svg.png){fig-align="center"}
 
@@ -472,9 +481,9 @@ Some shortcuts you can use to speed up important Windows operations.
 |                                           |                        |                                                                                      |
 
 
-# { background-image="https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&q=80&w=2952&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" background-size="cover" background-opacity="0.3" background-color="#000000"}
+# { background-image="https://www.tenforums.com/geek/gars/images/2/types/thumb_14486407500Folder.png" background-size="contain" background-position="left" background-opacity="0.3" background-color="#000000"}
 
-[Files, <br> Folders, and <br> Online Storage]{.r-fit-text .centering}
+[Files, <br> Folders, and <br> Online Storage]{#sec-folders .r-fit-text .right}
 
 ## Working with Files, Folders, & Online Storage
 
@@ -656,7 +665,7 @@ To create a new folder, follow these steps:
 
 1. Type a name for your folder (which overwrites the New Folder name), and press Enter.
 
-## Creating New Folders
+## Naming New Folders
 
 ::: {.callout-warning}
 
@@ -857,9 +866,9 @@ To synchronize a file in this fashion, it must be stored in a special OneDrive f
 `Microsoft OneDrive` is just one of many cloud storage services you can use to store and share your files online. Other popular services include `Apple iCloud` (www.icloud.com), `Box` (www.box.com), `Dropbox` (www.dropbox.com), and `Google Drive` (www.google.com/drive/). All these services work in a similar fashion. Check out the various services before you commit—especially for a paid plan.
 :::
 
-# { background-image="https://images.unsplash.com/photo-1612526765217-b549cae6d491?auto=format&fit=crop&q=80&w=2946&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" background-size="cover" background-opacity="0.2" background-color="#000000"}
+# {background-image="https://images.unsplash.com/photo-1574577457890-57d56460e04c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" background-size="cover" background-opacity="0.5" background-color="#000000"}
 
-[Personalizing <br> Windows]{.r-fit-text .centering}
+[Personalizing <br> Windows]{#sec-personal-windows .r-fit-text .centering}
 
 ## Personalizing the Windows
 

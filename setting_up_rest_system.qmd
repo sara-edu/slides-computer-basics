@@ -208,20 +208,56 @@ The most common external connector today is the Universal Serival Bus.
 
 ![](images/hotspot.png)
 
-## Browsing and searching the Web
+## Web Browsers
 
-- You surf the Web with a web browser.
+"You surf the Web with a piece of software called a web browser."
 
-- `Web Browser`
+![](images/browsers.png)
+
+## Web Browser
+
   - Home page
   - Search engine like Google, Duck Duck Go etc
   - Bookmark
-  - Add-ons
+  - Add-on
   - Settings & passwords
   - Tab and pinned tabs
   - Start from where you end the browser
   - mode and themes
   - ad blocker
+
+## Search Engines
+
+"a program that searches for and identifies items in a database that correspond to keywords or characters specified by the user, used especially for finding particular sites on the World Wide Web."
+
+![](images/search-engines.png)
+
+## 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### Web Browser
+
+- Use to access websites and web pages.
+
+- Does not require a search engine.
+
+- Application locally installed.
+:::
+
+::: {.column width="50%"}
+### Search Engine
+
+- Use to search for particular information.
+
+- Search engine needs a browser to work.
+
+- Software system running on the internet.
+:::
+
+::::
+
 
 ## Sending and Receiving Email
 
@@ -231,10 +267,6 @@ The most common external connector today is the Universal Serival Bus.
   - The user's name
   - The `@` sign
   - The user's domain name
-  
-- Two ways to send email
-  - POP\IMAP: Post Office Protocol/Internet Message Access Protocol - they require a separate email program.
-  - Web based email: send and receive email from any web browser.
   
 ## Learn about email
 

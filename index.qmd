@@ -186,6 +186,6 @@ sessionInfo()
 ::::
 
 ::: aside
-[Background image by [Anastasiia Kamil](https://unsplash.com/@nastyakamil)]{.small}
+[Background image by [Oh Tilly](https://unsplash.com/photos/white-flowers-B8_YF4fjPwo)]{.small}
 :::
 

@@ -1,6 +1,5 @@
 ---
 pagetitle: "Computer Basics"
-
 format:
   revealjs:
     menu: true
@@ -32,12 +31,12 @@ knitr:
 
 :::: {.columns}
 
-::: {.column width="40%"}
+::: {.column width="38%"}
 
 :::
 
-::: {.column width="60%"}
-[Dr. Ajay Koli | SARA Institute of Data Science | India]{.r-fit-text}
+::: {.column width="62%"}
+[Dr. Kiran Lata | SARA Institute of Data Science | India]{.r-fit-text}
 
 [Background image by [Freddie Marriage](https://unsplash.com/@fredmarriage)]{.small}
 <br>
@@ -64,7 +63,7 @@ library(palmerpenguins)
 ::: {.column width="50%"}
 <br>
 <br>
-![](images/ajay.png){fig-align="right"}
+![](images/kiran.png){fig-align="right"}
 :::
 
 ::: {.column width="50%"}
@@ -73,11 +72,11 @@ library(palmerpenguins)
 
 [Jai Bhim!]{.r-fit-text .theme-hello .theme-navy-blue}
 
-{{< fa circle-user >}} [Dr. Ajay Kumar Koli](https://koliajay.netlify.app/) 
+{{< fa circle-user >}} Dr. Kiran Koli
 
-{{< fa award >}} Founder & Executive Director
+{{< fa award >}} Founder & Director
 
-{{< fa play >}} [SARA Institute of Data Science](https://saraedu.netlify.app/)
+{{< fa play >}} [SARA Institute of Data Science](https://sara-edu.netlify.app/)
 
 {{< fa brands twitter >}} [@sara_institute](https://twitter.com/sara_institute)
 

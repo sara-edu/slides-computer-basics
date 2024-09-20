@@ -36,7 +36,7 @@ knitr:
 :::
 
 ::: {.column width="62%"}
-[Dr. Kiran Lata | SARA Institute of Data Science | India]{.r-fit-text}
+[Dr. Kiran Lata & Dr. Ajay Koli | SARA Institute| India]{.r-fit-text}
 
 [Background image by [Freddie Marriage](https://unsplash.com/@fredmarriage)]{.small}
 <br>
@@ -63,7 +63,7 @@ library(palmerpenguins)
 ::: {.column width="50%"}
 <br>
 <br>
-![](images/kiran.png){fig-align="right"}
+![](images/kiran.jpg){fig-align="right"}
 :::
 
 ::: {.column width="50%"}
@@ -72,7 +72,7 @@ library(palmerpenguins)
 
 [Jai Bhim!]{.r-fit-text .theme-hello .theme-navy-blue}
 
-{{< fa circle-user >}} Dr. Kiran Koli
+{{< fa circle-user >}} Dr. Kiran Koli & Dr. Ajay Koli
 
 {{< fa award >}} Founder & Director
 

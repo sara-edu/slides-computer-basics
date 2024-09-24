@@ -9,9 +9,6 @@ format:
     logo: images/logo.png
     footer: "[TOC](#sec-toc)"
     incremental: true
-    code-copy: true
-    code-link: true #using downlit pkg
-    code-line-numbers: false
     highlight-style: solarized
     transition: convex
     background-transition: convex

@@ -1,8 +1,18 @@
 ---
-format: 
+format:
   revealjs:
-    scrollable: true
+    menu: true
+    controls: true
     theme: [default, sara-style.scss]
+    slide-number: true
+    logo: images/logo.png
+    footer: "[TOC](#sec-toc)"
+    incremental: true
+    highlight-style: solarized
+    transition: convex
+    background-transition: convex
+    scrollable: true
+    fig-align: center
 knitr:
   opts_chunk: 
     echo: true
